@@ -1,0 +1,368 @@
+%==============================================================================
+\section{Explicando a classe \texttt{ativmatUFRB.cls}}
+%==============================================================================
+
+Abaixo estão os comandos criados nessa classe para confecção das listas de 
+atividade.
+
+%------------------------------------------------------------------------------
+\subsection{\texttt{\textbackslash titulo}}
+%------------------------------------------------------------------------------
+Esse comando deve ser colocado logo após o \verb|\begin{document}|.
+Ele gera um cabeçalho estilizado, com logotipo da UFRB; e, é composto de seis 
+itens obrigatórios, a saber:
+\begin{enumerate}[(i)]
+ \item \verb|\tituloDaLista{}|. Escreva o título da sua lista de atividade;
+ \item \verb|\prof{}|. O nome do professor da disciplina;
+ \item \verb|\disciplina{}|. A disciplina referente à lista, por exemplo,
+  \emph{Funções de uma Variável Complexa}, \emph{Cálculo I}, etc.
+ \item \verb|\curso{}|.  Curso onde está alocada a disciplina, por exemplo,
+  \emph{Licenciatura em Matemática}, etc.
+ \item \verb|\semestre{}|. Semestre onde se encontra a disciplina, por exemplo,
+  $2^{\circ}$~semestre. Nesse caso, coloque \textbf{apenas} o numeral associado.
+  No caso do exemplo citado, deverá ser feito assim: \verb|\semestre{2}|.
+ \item \verb|\numeroDaLista{}|. O número da lista deve ser colocado em 
+  \textbf{algarismos romanos}. 
+  Por exemplo, se for a primeira lista, deve ser escrito assim:
+  \verb|\numeroDaLista{I}|.
+\end{enumerate}
+
+Os seis itens citados acima devem ser colocados no preâmbulo do documento, ou
+seja, entre o \verb|\documentclass{ativmatUFRB}| e o \verb|\begin{document}|.
+
+\begin{codbox}{Exemplo de preenchimento do comando \texttt{\textbackslash titulo}}
+\begin{verbatim}
+\documentclass{ativmatUFRB}
+\usandoXeLuaLaTeX %-> ou \usandopdfLaTeX
+%=======================================
+% Informações do Título da Lista
+%=======================================
+\tituloDaLista{Título da Lista}
+\prof{Ícaro Vidal Freire}
+\disciplina{Cálculo Vetorial e Integral}
+\curso{Licenciatura em Matemática}
+\semestre{2}
+\numeroDaLista{I}
+%=======================================
+\begin{document}
+\titulo %------> Comando para o cabeçalho
+...
+\end{document}
+\end{verbatim}
+\end{codbox}
+
+%------------------------------------------------------------------------------
+\subsection{Ambiente para Questões}
+%------------------------------------------------------------------------------
+
+O ambiente \verb|\begin{atividade} ...\end{atividade}| enumera uma lista com o
+nome ``Questões'' estilizado: texto em negrito, dentro de uma caixa oval, sem
+``indentação''.
+Usamos assim:
+
+\begin{tcblisting}
+{
+  title     = Ambiente para ``Questões'',
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black,
+  listing side text,
+}
+\begin{atividade}
+ \questao Primeira questão.
+ \questao Segunda questão.
+\end{atividade}
+\end{tcblisting}
+
+Note que, para cada ``Questão estilizada'', usamos o comando \verb|\questao|.
+Na Subseção~\ref{comand} falaremos sobre comandos para escrever dois tipos de 
+alternativas nesse ambiente, cada uma com 5~(cinco) itens.
+
+%------------------------------------------------------------------------------
+\subsection{Ambiente para alternativas gerais}
+%------------------------------------------------------------------------------
+
+Os comandos \verb|\begin{itens}...\end{itens}| produz um ambiente propício para
+os ``itens'' (alternativas) dentro do ambiente \texttt{atividade}.
+Para produzir cada item, usamos o comando \verb|\item|.
+
+
+\begin{tcblisting}
+{
+  title     = Ambiente geral para alternativas,
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black,
+  listing side text
+}
+\begin{atividade}
+\questao Início da questão.
+\begin{itens}
+ \item Primeiro item.
+ \item Segundo item.
+\end{itens}
+\end{atividade}
+\end{tcblisting}
+
+Você pode usar esse ambiente para produzir inúmeras listas, bastando para isso
+colocar, entre \textit{colchetes}, o primeiro elemento da lista desejada.
+A classe \texttt{ativmatUFRB.cls} fornece o comando \verb|\vf| para produzir um
+espaço em branco entre dois \textit{parenteses}, \vf, para ser usado, por 
+exemplo, em questões que envolvam ``\textcolor{red}{v}erdadeiro'' ou
+``\textcolor{red}{f}also''. 
+
+\begin{tcblisting}
+{
+  title     = Lista em romano (minúscula),
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black,
+  listing side text
+}
+\begin{atividade}
+\questao Início da questão.
+\begin{itens}[(i)]
+ \item Primeiro item.
+ \item Segundo item.
+\end{itens}
+\end{atividade}
+\end{tcblisting}
+
+
+\begin{tcblisting}
+{
+  title     = Lista em Romano (maiúscula),
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black,
+  listing side text
+}
+\begin{atividade}
+\questao Início da questão.
+\begin{itens}[(I)]
+ \item Primeiro item.
+ \item Segundo item.
+\end{itens}
+\end{atividade}
+\end{tcblisting}
+
+\begin{tcblisting}
+{
+  title     = Lista para ``verdadeiro'' ou ``falso'',
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black,
+  listing side text
+}
+\begin{atividade}
+\questao Início da questão.
+\begin{itens}[\vf]
+ \item Primeiro item.
+ \item Segundo item.
+\end{itens}
+\end{atividade}
+\end{tcblisting}
+
+%------------------------------------------------------------------------------
+\subsection{Operadores matemáticos}
+%------------------------------------------------------------------------------
+
+Funções trigonométricas podem ser digitadas diretamente no idioma pt-BR.
+Algumas funções foram omitidas: ou por já serem contempladas no idioma 
+inglês\footnote{na realidade estão disponíveis nos pacotes da $\AmS$ 
+(\textit{American Mathematical Society}).
+Falaremos sobre ele na Seção~\ref{pacotes}, mas adiantamos que funções como
+$\arg,\, \ln,\, \cos,$ etc., já se encontram no pacote citado.} (como 
+\verb|\cos{}|, por exemplo), ou por não serem tão recorrentes (por exemplo,
+\verb|\arccossec{}|).
+Neste último caso, se for necessário, escreva no preâmbulo do seu texto o 
+operador diretamente (no exemplo, acima exposto, pode ser obtido por:
+\verb|\DeclareMathOperator{\arccossec}{arccossec}|).
+A Tabela~\ref{tab:op} exibe os Operadores matemáticos disponíveis na classe
+\href{https://ctan.dcc.uchile.cl/macros/latex/base/classes.pdf}{\texttt{ativmatUFRB.cls}}:
+\marginpar{\qrcode[height = 1cm]{https://ctan.dcc.uchile.cl/macros/latex/base/classes.pdf}}
+
+\begin{table}[!htbp]
+ \centering
+ \caption{Tabela com os Operadores da classe \texttt{ativmatUFRB.cls}}
+ \label{tab:op}
+ \begin{tabular}{lcl}
+  \toprule
+   \textbf{Operador} && \textbf{Saída}\\
+  \midrule
+   \verb|\sen|       && $\sen{}$\\
+   \verb|\tg|        && $\tg$\\
+   \verb|\cossec|    && $\cossec$\\
+   \verb|\cotg|      && $\cotg$\\
+   \verb|\arcsen|    && $\arcsen$\\
+   \verb|\arctg|     && $\arctg$\\
+   \verb|\arcsec|    && $\arcsec$\\
+   \verb|\Ln|        && $\Ln$\\
+   \verb|\Arg|       && $\Arg$\\
+   \verb|\cis|       && $\cis$\\
+  \bottomrule
+\end{tabular}
+\end{table}
+
+%------------------------------------------------------------------------------
+\subsection{\texttt{\textbackslash topico\{\}} \& Cia}
+%------------------------------------------------------------------------------
+
+Caso queira acrescentar tópicos, subtópicos ou até mesmo ``subsubtópicos'' 
+entre blocos de questões, basta usar os respectivos comandos:
+\verb|\topico{}|, \verb|\subtopico{}| ou \verb|\subsubtopico{}|.
+Apenas o comando \verb|\topico{}| produz uma faixa cinza que engloba o título 
+da seção desejada.
+Os outros deixam as subseções e ``subsubseções'' em negrito com diminuição da
+fonte (como na classe \verb|article.cls|).
+
+%------------------------------------------------------------------------------
+\subsection{Comandos úteis}\label{comand}
+%------------------------------------------------------------------------------
+
+A classe \texttt{ativmatUFRB.cls} disponibiliza alguns comandos úteis para 
+construção de listas de atividade para matemática.
+Obviamente os comandos não são exaustivos, visto que cada professor possui suas
+particularidades nas disciplinas.
+%
+\subsubsection*{\textbackslash \texttt{vazio}} %-------------------------------
+O comando \verb|\vazio| produz o símbolo do conjunto vazio, $\varnothing$.
+%
+\subsubsection*{\textbackslash \texttt{dd}} %----------------------------------
+%
+Digitando \verb|\dd| em um ambiente matemático produzirá ``$\dd$'', ou seja, a 
+letra ``d'' usada como símbolo da diferencial (dica: para produzir um pequeno 
+espaço antes desse comando use: ``\verb|\,|'', ou seja, \verb|\,\dd| ).
+Por exemplo, numa integral em função da variável $x$, note a diferença sutil:
+
+\begin{tcblisting}
+{
+  title     = $\dd$ vs $d$,
+  fonttitle = \bfseries
+  colback   = blue!5!white,
+  colframe  = blue!70!black,
+  listing side text, 
+}
+$\displaystyle \int f(x)\,\dd{x}$
+\\
+$\displaystyle \int f(x) dx$
+\end{tcblisting}
+%
+\subsubsection*{\textbackslash \texttt{intc}} %--------------------------------
+%
+O simbolo para a integral de linha de uma curva fechada orientada no sentido 
+anti-horário, $\displaystyle \intc$,  é dado pelo pacote \texttt{esint} através
+do comando, não tão atrativo para a língua portuguesa, 
+\verb|\varointctrclockwise|.
+Na presente classe, o mesmo símbolo pode ser obtido usando \verb|\intc| (lembre
+e ``\textcolor{red}{\textbf{int}}egral no sentido
+\textcolor{red}{\textbf{c}}ontrário ao relógio'').
+%
+\subsubsection*{\textbackslash \texttt{versor}} %------------------------------
+%
+Suponha que você queira escrever algum vetor unitário em negrito e com o sinal 
+do produto escalar usual, então basta usar o comando \verb|\versor{}|.
+
+\begin{tcblisting}
+{
+  title     = Vetores unitários em negrito com o sinal do ``produto'',
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black 
+}
+$\vv{F}(x,y,z)=L(x,y)\versor{i}+M(x,y)\versor{j}+N(x,y)\versor{k}$
+\end{tcblisting}
+%
+\subsubsection*{\textbackslash \texttt{Resp}} %--------------------------------
+%
+Geralmente os alunos gostam de saber a resposta final de alguma questão para 
+comparar com a resposta encontrada por eles.
+Nesta classe, usamos o comando \verb|\Resp{}| para criar um ambiente com fonte 
+menor, localizado sempre à direita, onde aparece o texto ``Resp.:'' em negrito.
+Veja um exemplo abaixo:
+
+\begin{tcblisting}
+{
+  title     = Resposta alinhada à direita,
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black
+}
+Seja $\mathcal{D}$ a parte da coroa circular compreendida entre $x^2+y^2=1$ e $x^2+y^2=4$ no primeiro quadrante.
+Calcule 
+\[
+  \iint\limits_{\mathcal{D}}(x^2+y^2)\,\dd{x}\,\dd{y}
+\]
+\Resp{$15\pi/8$}
+\end{tcblisting}
+%
+\subsubsection*{\textbackslash \texttt{altercols}} %---------------------------
+%
+Para uma lista de alternativas, o ambiente padrão \texttt{itens} servirá 
+adequadamente.
+Entretanto, frequentemente, deseja-se construir uma lista com cinco alternativas
+de resposta (onde uma está correta).
+Para isso, usamos o comando \verb|\altercols{}{}{}{}{}{}| dentro do ambiente
+\verb|\begin{atividade}|.
+Perceba que esse comando possui 6~(seis) parâmetros: o primeiro é o número de 
+colunas que pretende-se dividir as alternativas; e, os outros cinco parâmetros 
+são as alternativas.
+Por isso o nome do comando ``\textcolor{red}{\textbf{alter}}nativas em 
+\textcolor{red}{\textbf{col}}una\textcolor{red}{\textbf{s}}''.
+É obrigatório especificar os 6 (seis) parâmetros.
+Obviamente, o primeiro parâmetro (número de colunas) varia de 1 a 5.
+
+\begin{tcblisting}
+{
+  title     = Alternativas em 5 colunas,
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black
+}
+\begin{atividade}
+\questao Uma questão qualquer.
+ \altercols{5}{0}{1}{2}{3}{4}
+\end{atividade}
+\end{tcblisting}
+
+\begin{tcblisting}
+{
+  title     = Alternativas em 2 colunas,
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black,
+  listing side text
+}
+\begin{atividade}
+\questao Uma questão qualquer.
+ \altercols{2}{0}{1}{2}{3}{4}
+\end{atividade}
+\end{tcblisting}
+%
+\subsubsection*{\textbackslash \texttt{alterdce}} %----------------------------
+%
+Observe que no exemplo anterior, especificamente naquele em que se desejou 
+escrever as alternativas em 2~(duas) colunas, houve um espaço vertical não tão 
+conveniente entre as alternativas (d) e (e).
+Para sanar esse problema, devemos usar o comando \verb|\alterdce{}{}{}{}{}|.
+Note que só há 5~(cinco) parâmetros (todos dever ser preenchidos com as 
+alternativas), pois não há variação no número de colunas (duas colunas fixas).
+Assim, caso você queira ``\textcolor{red}{\textbf{alter}}nativas em
+\textcolor{red}{\textbf{d}}uas \textcolor{red}{\textbf{c}}olunas 
+\textcolor{red}{\textbf{e}}specíficas'', faça como no exemplo:
+
+\begin{tcblisting}
+{
+  title     = Alternativas em 2 colunas específicas,
+  fonttitle = \bfseries,
+  colback   = blue!5!white,
+  colframe  = blue!70!black
+}
+\begin{atividade}
+\questao Uma questão qualquer.
+ \alterdce{0}{1}{2}{3}{4}
+\end{atividade}
+\end{tcblisting}
+
+
+

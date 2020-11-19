@@ -1,0 +1,267 @@
+%==============================================================================
+\section{Lista de pacotes já instalados}\label{pacotes}
+%==============================================================================
+
+A classe \texttt{ativmatUFRB.cls} já contém alguns pacotes básicos para 
+construção de uma lista de atividade em matemática.
+Listamos todos os pacotes dessa classe abaixo.
+Caso você precise de algum outro pacote, deve inseri-lo no preâmbulo do arquivo
+\texttt{.tex}.
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{ifluatex, ifxetex\}}} \marginpar{\qrcode[height = 1cm]{https://www.ctan.org/pkg/ifluatex}}
+%------------------------------------------------------------------------------
+Esses dois pacotes criam condicionais para que o \LaTeX\ reconheça quais os 
+pacotes devem ser compilados ou com \texttt{XeLaTeX}, ou com \texttt{LuaLaTeX},
+ou com \texttt{pdfLaTeX}.\\
+\texttt{ifluatex}: { \small \url{https://www.ctan.org/pkg/ifluatex} }\\
+\texttt{ifxetex}: { \small \url{https://ctan.dcc.uchile.cl/macros/generic/iftex/iftex.pdf} } \marginpar{\qrcode[height = 1cm]{https://ctan.dcc.uchile.cl/macros/generic/iftex/iftex.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{fontspec\}}} 
+%------------------------------------------------------------------------------
+Serve, dentre outras coisas, para escolher fontes \textit{OpenType}.
+Foi desenvolvido para uso com compiladores mais modernos como LuaLaTeX ou 
+XeLaTeX.\\
+{\small \url{https://ctan.dcc.uchile.cl/macros/unicodetex/latex/fontspec/fontspec.pdf}}
+\marginpar{\qrcode[height = 1cm]{https://ctan.dcc.uchile.cl/macros/unicodetex/latex/fontspec/fontspec.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{polyglossia\}}}
+%------------------------------------------------------------------------------
+É um substituto do pacote \texttt{babel} (veja mais abaixo) para usuários de 
+XeLaTeX ou LuaLaTeX.\\
+{\small \url{https://ctan.dcc.uchile.cl/macros/unicodetex/latex/polyglossia/polyglossia.pdf}}
+\marginpar{\qrcode[height = 1cm]{https://ctan.dcc.uchile.cl/macros/unicodetex/latex/polyglossia/polyglossia.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage[T1]\{fontenc\}}}
+%------------------------------------------------------------------------------
+Pacote para codificação de saída de fonte.
+Com ele, ocorre corretamente a hifenação das diversas fontes possivelmente 
+usadas no texto.\\
+{\small\url{https://www.ctan.org/pkg/fontenc}}
+\marginpar{\qrcode[height = 1cm]{https://www.ctan.org/pkg/fontenc}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{emerald\}}}
+%------------------------------------------------------------------------------
+\emph{Emerald} é um pacote que dá suporte a algumas fontes gratuitas ECF 
+(\emph{Emerald City Fontwerks}) no \LaTeX.
+Ela foi usada para produzir, de forma estilizada, o nome 
+{\ECFIntimacy Lista de Atividade \ldots} no cabeçalho.\\
+{\small\url{http://linorg.usp.br/CTAN/fonts/emerald/doc/emerald.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/fonts/emerald/doc/emerald.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{lmodern\}}}
+%------------------------------------------------------------------------------
+Uma família de fontes Latim Modern que produz o ``corpo de texto'' da classe 
+\texttt{ativmatUFRB.cls}.\\
+{\small\url{https://www.ctan.org/tex-archive/fonts/lm/}}
+\marginpar{\qrcode[height = 1cm]{https://www.ctan.org/tex-archive/fonts/lm/}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage[brazilian]\{babel\}}}
+%------------------------------------------------------------------------------
+Este pacote gerencia regras tipográficas (e outras) culturalmente determinadas 
+para uma ampla variedade de idiomas.
+Por exemplo, traduz elementos internos de diversas classes \textit{standart} do
+\LaTeX.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/required/babel/base/babel.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/required/babel/base/babel.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage[explicit]\{titlesec\}}}
+%------------------------------------------------------------------------------
+Esse pacote fornece uma interface para modificar/criar comandos para seleção de 
+vários estilos de título.
+Veja a documentação para mais detalhes:\\ 
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/titlesec/titlesec.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/titlesec/titlesec.pdf}}
+
+%------------------------------------------------------------------------------
+%\subsection*{\texttt{\textbackslash usepackage[utf8]\{inputenc\}}}
+%------------------------------------------------------------------------------
+%Pacote para codificação de entrada. Dentre outras coisas, permite a acentuação diretamente pelos caracteres do nosso teclado. \emph{É obrigatório que seu arquivo \texttt{.tex} esteja salvo em codificação \textsc{utf8}}.\\
+%{\small\url{http://linorg.usp.br/CTAN/macros/latex/base/inputenc.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{geometry\}}}
+%------------------------------------------------------------------------------
+O pacote fornece uma interface de usuário fácil e flexível para personalizar o 
+layout da página.
+No caso da nossa classe, usamos a saída para papel A4, com margem superior de
+1cm e as outras com 1.5cm.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/geometry/geometry.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/geometry/geometry.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{lipsum\}}}
+%------------------------------------------------------------------------------
+Este pacote oferece acesso fácil ao texto fictício do \emph{Lorem Ipsum}, 
+separando-o em parágrafos.
+Serve para testes tipográficos com palavras que simulam uma escrita mais 
+adequada do que repetições de palavras (como ``texto, texto, texto'').\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/lipsum/lipsum.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/lipsum/lipsum.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{amsmath,amsthm,amssymb,amscd\}}}
+%------------------------------------------------------------------------------
+Diversos pacotes da Sociedade Americana de Matemática (\emph{American 
+Mathematical Society}).
+Os pacotes \AmS-\TeX\ são fundamentais para escrita matemática.
+Segue a documentação de cada um deles:
+\begin{description}
+	 \item[amsmath] Para diversos comandos de escrita matemática.\\
+   {\small\url{http://linorg.usp.br/CTAN/macros/latex/required/amsmath/amsldoc.pdf}}
+   \marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/required/amsmath/amsldoc.pdf}}
+	 \item[amsthm]  Para configurações de teoremas, corolários, etc.\\
+   {\small\url{http://linorg.usp.br/CTAN/macros/latex/required/amscls/doc/amsthdoc.pdf}}
+   \marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/required/amscls/doc/amsthdoc.pdf}}
+	 %\item[amsfonts] Diversos símbolos e fontes\footnote{veja uma tabelas mais 
+  % resumida:
+  % \url{http://milde.users.sourceforge.net/LUCR/Math/mathpackages/amsfonts-symbols.pdf}}.
+  % Por exemplo, produz a simbologia características de conjuntos numéricos 
+  % ($\mathbb{N}$ é produzido com o comando \verb|$\mathbb{N}$|).\\
+  % {\small\url{http://linorg.usp.br/CTAN/fonts/amsfonts/doc/amsfndoc.pdf}}
+	 \item[amssymb] Diversos símbolos matemáticos\footnote{veja esse \emph{link} 
+   para visualização mais rápida: 
+   \url{https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf}}.
+   Nesse pacote já está incluso o pacote \texttt{amsfonts}, que pode produzir
+   a simbologia características de conjuntos numéricos ($\mathbb{N}$.
+   Para tanto,  basta usar o comando \verb|$\mathbb{N}$|)\\
+   {\small\url{http://texdoc.net/texmf-dist/doc/fonts/amsfonts/amssymb.pdf}}
+   \marginpar{\qrcode[height = 1cm]{http://texdoc.net/texmf-dist/doc/fonts/amsfonts/amssymb.pdf}}
+	 \item[amscd] Pacote para criar diagramas comutativos\footnote{veja também o 
+   pacote tikz:
+   \url{http://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf}}\\	
+   {\small\url{http://linorg.usp.br/CTAN/macros/latex/required/amsmath/amscd.pdf}}
+   \marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/required/amsmath/amscd.pdf}}
+\end{description}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{mathtools\}}}
+%------------------------------------------------------------------------------
+O \emph{Mathtools} fornece muitas ferramentas úteis para a composição
+matemática.
+Ele é baseado no \texttt{amsmath} e corrige várias deficiências deste e do 
+\LaTeX\ padrão.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/mathtools/mathtools.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/mathtools/mathtools.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{systeme\}}}
+%------------------------------------------------------------------------------
+Pacote para construir sistemas de equações.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/generic/systeme/systeme_fr.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/generic/systeme/systeme_fr.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{esint\}}}
+%------------------------------------------------------------------------------
+Para produzir diversos tipos de integrais.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/esint/esint-doc.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/esint/esint-doc.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{array\}}} 
+%------------------------------------------------------------------------------
+Pacote para construção e modificação de diversos parâmetros numa tabela.
+A classe \texttt{ativmatUFRB.cls} está programada para um limite de 20 colunas
+numa tabela,  \verb|\setcounter{MaxMatrixCols}{20}|.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/required/tools/array.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/required/tools/array.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{esvect\}}}
+%------------------------------------------------------------------------------
+Essencial para produzir vetores.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/esvect/esvect.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/esvect/esvect.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{graphicx\}}}
+%------------------------------------------------------------------------------
+Dentre outras funcionalidades, esse pacote é essencial para inserção de figuras
+e ambiente para estas num documento.
+A classe \texttt{ativmatUFRB.cls} foi coonfigurada para que as figuras sejam 
+buscadas na pasta ``figs'' (usou-se o comando \verb|\graphicspath{{./figs/}}|).
+Portanto, \textbf{todas} as figuras da lista de atividade devem estar na pasta
+intitulada ``figs''.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/required/graphics/grfguide.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/required/graphics/grfguide.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage[table]\{xcolor\}}}
+%------------------------------------------------------------------------------
+Produz inúmeras cores\footnote{veja exemplos com \texttt{pstricks}:
+\url{http://linorg.usp.br/CTAN/macros/latex/contrib/xcolor/xcolor2.pdf}}
+estilizadas.\\ 
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/xcolor/xcolor.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/xcolor/xcolor.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{enumerate\}}}
+%------------------------------------------------------------------------------
+Implementa modificações em ambientes com listas enumeradas.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/required/tools/enumerate.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/required/tools/enumerate.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{fancybox\}}}
+%------------------------------------------------------------------------------
+Produz caixas estilizadas (ovais, com sombra, etc.).\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/fancybox/fancybox-doc.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/fancybox/fancybox-doc.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{setspace\}}}
+%------------------------------------------------------------------------------
+Pacote para espaçamento entre linhas.
+A classe \texttt{ativmatUFRB.cls}, no ambiente 
+\verb|\begin{Atividade}...\end{Atividade}| já está configurado para espaçamento
+entre linhas de 1,5. \\
+{\small\url{https://www.ctan.org/pkg/setspace}}
+\marginpar{\qrcode[height = 1cm]{https://www.ctan.org/pkg/setspace}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{booktabs\}}}
+%------------------------------------------------------------------------------
+Para tabelas estilizadas e de ótima qualidade tipográfica.\\ 
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/booktabs/booktabs.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/booktabs/booktabs.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage\{multicol\}}}
+%------------------------------------------------------------------------------
+Para escrever texto em várias colunas (máximo de 10).\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/required/tools/multicol.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/required/tools/multicol.pdf}}
+
+%------------------------------------------------------------------------------
+\subsection*{\texttt{\textbackslash usepackage[labelfont=bf,font=small]\{caption\}}}
+%------------------------------------------------------------------------------
+Modifica legendas em ambientes flutuantes (tabelas e figuras).
+A presente classe está configurada para que a fonte da legenda esteja em um 
+tamanho menor do que a fonte do corpo do texto; e, a marcação de cada legenda 
+está em negrito.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/caption/caption-eng.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/caption/caption-eng.pdf}}
+
+%------------------------------------------------------------------------------ 
+\subsection*{\texttt{\textbackslash usepackage\{hyperref\}}}
+%------------------------------------------------------------------------------
+O pacote \emph{hiperref} é usado para manipular comandos de referência cruzada
+no \LaTeX\ e para produzir links de hipertexto no documento.
+Na presente classe os \emph{links} estão ativados para cor azul.\\
+{\small\url{http://linorg.usp.br/CTAN/macros/latex/contrib/hyperref/doc/manual.pdf}}
+\marginpar{\qrcode[height = 1cm]{http://linorg.usp.br/CTAN/macros/latex/contrib/hyperref/doc/manual.pdf}}
+
+%------------------------------------------------------------------------------ 
+\subsection*{\texttt{\textbackslash usepackage\{units\}}}
+%------------------------------------------------------------------------------
+Para padronizar unidades.\\
+{\small\url{https://ctan.dcc.uchile.cl/macros/latex/contrib/units/units.pdf}}
+\marginpar{\qrcode[height = 1cm]{https://ctan.dcc.uchile.cl/macros/latex/contrib/units/units.pdf}}

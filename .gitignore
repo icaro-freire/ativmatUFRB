@@ -1,0 +1,10 @@
+# Comando para ignorar pastas e arquivos auxiliares
+
+classe_ativmatUFRB/aux-files
+
+classe_ativmatUFRB/*.synctex
+
+guia_ativmatUFRB/v1.61/aux-files
+
+guia_ativmatUFRB/v1.61/*.synctex
+
