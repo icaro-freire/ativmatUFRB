@@ -2,7 +2,7 @@
   <img 
       align  = "center" 
       src    = "/img/logo_leao-chapeu.png" 
-      width  = "500"
+      width  = "300"
   />
 </p>
 
