@@ -71,7 +71,7 @@
 
 # Sobre a Classe ativmatUFRB.cls
 
-## Motivação
+## :bulb: Motivação
 A motivação para desenvolver esta classe vem do Projeto de Extensão, cadastrado no [Centro de Formação de Professores](https://www.ufrb.edu.br/cfp/), 
 intitulado: _LaTeX para o Professor de Matemática_. 
 Tal projeto é ofertado (parcialmente) em forma de curso, que versa sobre a confecção de materiais didáticos impressos (e também visuais, como apresentações)
@@ -79,12 +79,12 @@ com alta qualidade tipográfica usando o programa [`LaTeX`](https://sites.google
 no desenvolvimento de classes extra-oficiais (lista de atividade, avaliações, trabalho de conclusão de curso, etc.) para o curso de Licenciatura ou 
 Bacharelado em Matemática da UFRB.
 
-## Conteúdo
+## :memo: Conteúdo
 Essa classe é derivada da classe _standard_ [`article.cls`](https://ctan.dcc.uchile.cl/macros/latex/base/classes.pdf).
 Apenas foi acrescentado um cabeçalho estilizado com o logotipo da UFRB e informações sobre o título da lista, professor, disciplina, curso, semestre e número
 da lista; bem como, comandos internos que julgamos úteis na construção de uma lista com questões de matemática ou área correlacionada.
 
-## Como instalar?
+## :feet: Como instalar?
 Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disponível no _Guia do Usuário_, cujo _download_ pode ser realizado no _link_:
 
 <p align = "center">
@@ -93,7 +93,7 @@ Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disp
   </a>
 </p>
 
-:warning: É essencial ler o [Guia do Usuário](https://github.com/icaro-freire/ativmatUFRB/blob/master/guia_ativmatUFRB/v1.61/guia-ativmatUFRB_v1.61.pdf) para usar a classe em questão.
+> **Atenção!** É essencial ler o [Guia do Usuário](https://github.com/icaro-freire/ativmatUFRB/blob/master/guia_ativmatUFRB/v1.61/guia-ativmatUFRB_v1.61.pdf) para usar a classe em questão.
 
 # Sobre a Descrição desse repositório
 Visualmente, este repositório possui a seguinte descrição:
