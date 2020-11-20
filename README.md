@@ -119,5 +119,5 @@ A descrição de cada um desses itens é dada a seguir:
 
 # Licença
 ativmatUFRB.cls, v1.61 </br>
-_Copyright_ **⋅** 2020 **⋅** **Ícaro Vidal Freire** </br>
+_Copyright_ :copyright: **⋅** 2020 **⋅** **Ícaro Vidal Freire** </br>
 <a href="https://github.com/icaro-freire/ativmatUFRB/blob/master/LICENSE"><img alt="GitHub license" align="center" src="https://img.shields.io/github/license/icaro-freire/ativmatUFRB"></a>
