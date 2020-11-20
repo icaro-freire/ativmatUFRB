@@ -84,7 +84,7 @@ Essa classe é derivada da classe _standard_ [`article.cls`](https://ctan.dcc.uc
 Apenas foi acrescentado um cabeçalho estilizado com o logotipo da UFRB e informações sobre o título da lista, professor, disciplina, curso, semestre e número
 da lista; bem como, comandos internos que julgamos úteis na construção de uma lista com questões de matemática ou área correlacionada.
 
-## :feet: Como instalar?
+## :floppy_disk: Como instalar?
 Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disponível no _Guia do Usuário_, cujo _download_ pode ser realizado no _link_:
 
 <p align = "center">
