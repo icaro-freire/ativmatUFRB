@@ -57,7 +57,8 @@
   </a>
 </p>
 
-> `ativmatUFRB.cls` é um acrônico para a classe não oficial de latex para listas de **ativ**idades para o curso de **mat**emática da **UFRB**.
+> `ativmatUFRB.cls` é um acrónimo para a classe não oficial de latex para listas de **ativ**idades para o curso de **mat**emática da **UFRB**.
+<hr>    
 
 # Status
 <h5 align = "center">
@@ -70,7 +71,6 @@
 </h5>
 
 # Sobre a Classe ativmatUFRB
-
 ## :bulb: Motivação
 A motivação para desenvolver esta classe vem do Projeto de Extensão, cadastrado no [Centro de Formação de Professores](https://www.ufrb.edu.br/cfp/), 
 intitulado: _LaTeX para o Professor de Matemática_. 
