@@ -5,11 +5,14 @@
       width  = "300"
       alt    = "ativmatUFRB"
   />
-  <h2 align = "center">
+  <h1 align = "center">
+      ativmatUFRB.cls
+  </h1>
+  <h3 align = "center">
       <p align = "center">
           :straight_ruler: :triangular_ruler: Classe LaTeX (não oficial) para Listas de Atividade da UFRB :straight_ruler: :triangular_ruler:
       </p>
-  </h2>
+  </h3>
 </p>
 
 <p align = "center">
@@ -18,19 +21,23 @@
       alt   = "GitHub last commit"
       src   = "https://img.shields.io/github/last-commit/icaro-freire/ativmatUFRB"
   />
-  <a href = "https://img.shields.io/github/forks/icaro-freire/ativmatUFRB">
-      <img
-          align = "center"
-          alt   = "GitHub stars"
-          src   = "https://img.shields.io/github/stars/icaro-freire/ativmatUFRB"
-      >        
+  <a align = "center" href = "https://github.com/icaro-freire/ativmatUFRB/network">
+    <img 
+         align = "center"
+         alt   = "GitHub forks" 
+         src   = "https://img.shields.io/github/forks/icaro-freire/ativmatUFRB">
   </a>
-  <a href = "https://github.com/icaro-freire/ativmatUFRB/stargazers">
-      <img
-          alt = "GitHub stars" 
-          src = "https://img.shields.io/github/stars/icaro-freire/ativmatUFRB"
-      >
+  <a align = "center" href="https://github.com/icaro-freire/ativmatUFRB/stargazers">
+    <img 
+         align = "center"
+         alt   = "GitHub stars" 
+         src   = "https://img.shields.io/github/stars/icaro-freire/ativmatUFRB">
   </a>
+  <a align = "center" href="https://github.com/icaro-freire/ativmatUFRB/issues">
+    <img 
+         align = "center"
+         alt   = "GitHub issues" 
+         src   = "https://img.shields.io/github/issues/icaro-freire/ativmatUFRB">
   </a>
 </p>
 
@@ -47,4 +54,8 @@
 # Classe ativmatUFRB
 
 :construction: EM CONSTRUÇÃO :construction:
+
 Volte em alguns dias!
+
+#### Licença
+[![GitHub license](https://img.shields.io/github/license/icaro-freire/ativmatUFRB)](https://github.com/icaro-freire/ativmatUFRB/blob/master/LICENSE)
