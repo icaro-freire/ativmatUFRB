@@ -84,6 +84,36 @@ Essa classe é derivada da classe _standard_ [`article.cls`](https://ctan.dcc.uc
 Apenas foi acrescentado um cabeçalho estilizado com o logotipo da UFRB e informações sobre o título da lista, professor, disciplina, curso, semestre e número
 da lista; bem como, comandos internos que julgamos úteis na construção de uma lista com questões de matemática ou área correlacionada.
 
+## Como instalar?
+Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disponível no _Guia do Usuário_, cujo _download_ pode ser realizado no _link_:
+
+<p align = "center">
+  <a align = "center" href = "/guia_ativmatUFRB/v1.61/guia-ativmatUFRB_v1.61.pdf">
+      :link: guia-ativmatUFRB_v1.61.pdf
+  </a>
+</p>
+
+# Sobre a Descrição desse repositório
+Visualmente, este repositório possui a seguinte descrição:
+
+📦ativmatUFRB </br> 
+ ┣ 📂classe_ativmatUFRB </br> 
+ ┣ 📂guia_ativmatUFRB </br> 
+ ┣ 📂img </br> 
+ ┣ 📜.gitignore </br> 
+ ┣ 📜LICENSE </br> 
+ ┗ 📜README.md 
+ 
+A descrição de cada um desses itens é dada a seguir:
+- **ativmatUFRB** É a pasta principal, onde nos encontramos;
+    + **classe_ativmatUFRB** Nesta pasta, econtram-se arquivos para produção do `.pdf` desejado. 
+                              É nela que se encontra, dentre outras coisas, o arquivo `.cls`,
+                              resposável por produzir as alterações no cabeçalho e comandos para confecção da lista de atividade padronizada;
+    + **guia_ativmatUFRB** Nesta pasta, econtram-se arquivos para produção do Guia do Usuário da classe `ativmatUFRB.cls`;
+    + **img** Aqui se encontra a imagem do logo exposto nesta página do GitHub;
+    + **.gitignore** Arquivo usado, dentro do contexto do GitHub, para ignorar certas extensões ou pastas que o autor julga não necessárias para exibir o que deseja;
+    + **LICENSE** Arquivo usado, dentro do contexto do GitHub, para exibição da Licença do material;
+    + **README.md** Arquivo usado, também dentro do contexto do GitHub, para explicar, por exemplo, os objetivos do repositório.
 
 # Licença
-<a href="https://github.com/icaro-freire/ativmatUFRB/blob/master/LICENSE"><img alt="GitHub license" align="center" src="https://img.shields.io/github/license/icaro-freire/ativmatUFRB"></a> ⋅ Ícaro Vidal Freire ⋅ :copyright: 2020
+<a href="https://github.com/icaro-freire/ativmatUFRB/blob/master/LICENSE"><img alt="GitHub license" align="center" src="https://img.shields.io/github/license/icaro-freire/ativmatUFRB"></a> ⋅ **Ícaro Vidal Freire** ⋅ :copyright: 2020
