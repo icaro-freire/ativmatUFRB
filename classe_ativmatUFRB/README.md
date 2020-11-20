@@ -20,28 +20,19 @@ Toda informação necessária para seu uso está exposta no `guia-ativmatUFRB`.
 
 Sobre a organização das pastas aqui no GitHub
 ----------------------------------------------
-
-```
-classe_ativmatUFRB
- ·
- │
- ├── aux-files
- │     ├── ...
- │     └── ...
- ├── figs
- │     ├── espiral.pdf
- │     └── ufrb.jpeg
- ├── fonts
- │     └── intimacy
- │           ├── intimacy.ttf
- │           └── intimcy2.ttf
- ├── ativmatUFRB.cls
- ├── modelo_ativmatUFRB_v1.61.pdf
- ├── modelo_ativmatUFRB_v1.61.synctex
- ├── modelo_ativmatUFRB_v1.61.tex
- └── README.md
-```
-
+📦classe_ativmatUFRB
+ ┣ 📂figs
+ ┃ ┣ 📜espiral.pdf
+ ┃ ┗ 📜ufrb.jpg
+ ┣ 📂fonts
+ ┃ ┗ 📂intimacy
+ ┃ ┃ ┣ 📜intimacy.ttf
+ ┃ ┃ ┗ 📜intimcy2.ttf
+ ┣ 📜ativmatUFRB.cls
+ ┣ 📜modelo_ativmatUFRB.pdf
+ ┣ 📜modelo_ativmatUFRB.tex
+ ┗ 📜README.md
+ 
 Sobre o Projeto de Extensão
 ----------------------------
 
