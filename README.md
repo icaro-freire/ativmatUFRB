@@ -49,7 +49,9 @@
   </a>
 </p>
 
-# Classe ativmatUFRB
+> `ativmatUFRB.cls` é um acrônico para a classe latex de lista de **ativ**idades para o curso de **mat**emática da **UFRB**.
+
+# Sobre a Classe ativmatUFRB.cls
 
 :construction: EM CONSTRUÇÃO :construction:
 
