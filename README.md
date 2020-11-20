@@ -118,4 +118,4 @@ A descrição de cada um desses itens é dada a seguir:
     + **README.md** Arquivo usado, também dentro do contexto do GitHub, para explicar, por exemplo, os objetivos do repositório.
 
 # Licença
-<a href="https://github.com/icaro-freire/ativmatUFRB/blob/master/LICENSE"><img alt="GitHub license" align="center" src="https://img.shields.io/github/license/icaro-freire/ativmatUFRB"></a> ⋅ **Ícaro Vidal Freire** ⋅ :copyright: 2020
+_Copyright_ 2020 **⋅** **Ícaro Vidal Freire** **⋅** <a href="https://github.com/icaro-freire/ativmatUFRB/blob/master/LICENSE"><img alt="GitHub license" align="center" src="https://img.shields.io/github/license/icaro-freire/ativmatUFRB"></a>
