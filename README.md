@@ -93,6 +93,8 @@ Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disp
   </a>
 </p>
 
+:warning: É essencial ler o [Guia do Usuário](https://github.com/icaro-freire/ativmatUFRB/blob/master/guia_ativmatUFRB/v1.61/guia-ativmatUFRB_v1.61.pdf) para usar a classe em questão.
+
 # Sobre a Descrição desse repositório
 Visualmente, este repositório possui a seguinte descrição:
 
