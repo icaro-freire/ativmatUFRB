@@ -9,7 +9,7 @@
       ativmatUFRB.cls
   </h1>
   <h3 align = "center">
-      :straight_ruler: :triangular_ruler: Classe LaTeX (não oficial) para Listas de Atividade da UFRB) :straight_ruler: :triangular_ruler:
+      :straight_ruler: :triangular_ruler: (Classe LaTeX -não oficial- para Listas de Atividade da UFRB) :straight_ruler: :triangular_ruler:
   </h3>
 </p>
 
