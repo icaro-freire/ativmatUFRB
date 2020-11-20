@@ -57,9 +57,9 @@
   </a>
 </p>
 
-> `ativmatUFRB.cls` é um acrônico para a classe não oficial de latex para listas de **ativ**idades para o curso de **mat**emática da **UFRB**.
-
 <hr>
+
+> `ativmatUFRB.cls` é um acrônico para a classe não oficial de latex para listas de **ativ**idades para o curso de **mat**emática da **UFRB**.
 
 # Status
 <h5 align = "center">
