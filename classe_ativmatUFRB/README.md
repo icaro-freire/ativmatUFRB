@@ -1,3 +1,15 @@
+<p align = "center">
+  <img
+      width = "300px"
+      align = "center"
+      src   = "https://github.com/icaro-freire/ativmatUFRB/blob/master/img/logo_preto-e-branco.png"
+      alt   = "Mementos GitHub" 
+  >
+  <h1 align = "center">
+      ativmatUFRB.cls
+  </h1> 
+</p>
+
 A Classe ativmatUFRB
 =====================
 
@@ -20,6 +32,7 @@ Toda informação necessária para seu uso está exposta no `guia-ativmatUFRB`.
 
 Sobre a organização das pastas aqui no GitHub
 ----------------------------------------------
+<pre>
 📦classe_ativmatUFRB
  ┣ 📂figs
  ┃ ┣ 📜espiral.pdf
@@ -32,7 +45,7 @@ Sobre a organização das pastas aqui no GitHub
  ┣ 📜modelo_ativmatUFRB.pdf
  ┣ 📜modelo_ativmatUFRB.tex
  ┗ 📜README.md
- 
+</pre> 
 Sobre o Projeto de Extensão
 ----------------------------
 
