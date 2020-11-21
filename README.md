@@ -95,6 +95,47 @@ Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disp
 
 > **Atenção!** É essencial ler o [Guia do Usuário](https://github.com/icaro-freire/ativmatUFRB/blob/master/guia_ativmatUFRB/v1.61/guia-ativmatUFRB_v1.61.pdf) para usar a classe em questão.
 
+Todavia, dependendo de qual compilador esteja usando, algumas sutis diferenças são necessárias.
+Essa classe considera, apenas, três possibilidades de compiladores: [LuaLaTeX](http://www.luatex.org/) ou [XeLaTeX](https://tug.org/xetex/), que são os mais atuais; e, o [pdfLaTeX](https://www.tug.org/applications/pdftex/), o clássico.
+
+### Compilando com pdfLaTeX
+Se você (ainda) produz o `.pdf`com `pdfLaTeX`, na pasta de sua lista de atividade (que denotaremos por `01_lista_assunto`) deverá conter:
+- `ativmatUFRB.cls`; ou seja, a classe LaTeX para produção de lista atividade para Matemática (e afins);
+- `modelo_ativmatUFRB.tex`; ou seja, um arquivo `.tex` onde você escreverá sua lista de atividade. Obviamente, o nome pode ser alterado.
+                            Nela, deverá especificar no preâmbulo, dentre outras coisas (veja o guia) `\documentclass{ativmatUFRB}`;
+- `figs/`; ou seja, uma _pasta_ que deverá conter o lodo da UFRB, bem como **todas** as imagens que serão utilizadas na lista;
+Visualmente, seria assim:
+
+<pre>
+ 📦01_lista_assunto
+  ┣ 📂figs
+  ┃ ┗ 📜ufrb.png
+  ┣ 📜ativmatUFRB.cls
+  ┗ 📜modelo_ativmatUFRB.tex
+</pre>
+
+### Compilando com LuaLaTeX ou XeLaTeX
+Além dos itens citados no pdfLaTeX, a pasta `fonts` deve ser acrescentada.
+Essa pasta contém arquivos `.ttf` de uma fonte usada em uma parte específica do texto (a saber, no cabeçalho).
+Logo, visualmente fica:
+
+<pre>
+📦01_lista_assunto
+ ┣ 📂figs
+ ┃ ┗ 📜ufrb.png
+ ┣ 📂fonts
+ ┃ ┗ 📂intimacy
+ ┃ ┃ ┣ 📜intimacy.ttf
+ ┃ ┃ ┗ 📜intimcy2.ttf
+ ┣ 📜ativmatUFRB.cls
+ ┗ 📜modelo_ativmatUFRB.tex
+</pre>
+
+> :warning: **Atenção!** 
+> - Geralmente o tempo da primeira compilação é um pouco maior do que os subsequentes, visto que, possivelmente, muitos pacotes serão instalados no seu computador;
+> - É aconselhável, também, compilar umas três ou quatro vezes no início, para que possíveis mensagens de alertas (_warning_) sejam reduzidas.
+> - Existem maneiras de organizar seus arquivos temporários gerados na produção do `.pdf`. Para isso, leia o <a href = "/guia_ativmatUFRB/v1.61/guia-ativmatUFRB_v1.61.pdf"> guia_ativmatUFRB.pdf</a>
+
 # Sobre a Descrição desse repositório
 Visualmente, este repositório possui a seguinte descrição:
 
