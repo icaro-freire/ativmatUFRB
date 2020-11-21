@@ -124,8 +124,8 @@
 - `modelo_ativmatUFRB.tex`; ou seja, um arquivo `.tex` onde você escreverá sua lista de atividade.
                             Obviamente, o nome pode ser alterado. 
                             Nela, deverá especificar no preâmbulo, dentre outras coisas (veja o guia) `\documentclass{ativmatUFRB}`;
-- `figs/`; ou seja, uma _pasta_ que deverá conter o logo da UFRB, bem como **todas** as imagens que serão utilizadas na lista;
-Visualmente, seria assim:
+- `figs/`; ou seja, uma _pasta_ que deverá conter o logo da UFRB, bem como **todas** as imagens que serão utilizadas na lista.
+           Visualmente, seria assim:
 
 <pre>
  📦01_lista_assunto
