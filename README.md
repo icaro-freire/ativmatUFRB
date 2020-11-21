@@ -4,7 +4,7 @@
       src    = "/img/logo_leao-chapeu.png" 
       width  = "300"
       alt    = "ativmatUFRB"
-  />
+  >
   <h1 align = "center">
       ativmatUFRB.cls
   </h1>
@@ -23,27 +23,27 @@
       align = "center"
       alt   = "GitHub last commit"
       src   = "https://img.shields.io/github/last-commit/icaro-freire/ativmatUFRB"
-  />
+  >
   <a align = "center" href = "https://github.com/icaro-freire/ativmatUFRB/network">
     <img 
          align = "center"
          alt   = "GitHub forks" 
          src   = "https://img.shields.io/github/forks/icaro-freire/ativmatUFRB"
-    \>
+    >
   </a>
   <a align = "center" href="https://github.com/icaro-freire/ativmatUFRB/stargazers">
     <img 
          align = "center"
          alt   = "GitHub stars" 
          src   = "https://img.shields.io/github/stars/icaro-freire/ativmatUFRB"
-    />
+    >
   </a>
   <a align = "center" href="https://github.com/icaro-freire/ativmatUFRB/issues">
     <img 
          align = "center"
          alt   = "GitHub issues" 
          src   = "https://img.shields.io/github/issues/icaro-freire/ativmatUFRB"
-    \>
+    >
   </a>
 </p>
 
@@ -53,7 +53,7 @@
           align = "center" 
           alt   = "GitHub issues" 
           src   = "https://img.shields.io/badge/contact-Telegram-2CA5E0?logo=Telegram&style=for-the-badge"
-      />
+      >
   </a>
 </p>
 
@@ -98,14 +98,16 @@ Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disp
 # Sobre a Descrição desse repositório
 Visualmente, este repositório possui a seguinte descrição:
 
-📦ativmatUFRB </br> 
- ┣ 📂classe_ativmatUFRB </br> 
- ┣ 📂guia_ativmatUFRB </br> 
- ┣ 📂img </br> 
- ┣ 📜.gitignore </br> 
- ┣ 📜LICENSE </br> 
+<pre>
+📦ativmatUFRB 
+ ┣ 📂classe_ativmatUFRB 
+ ┣ 📂guia_ativmatUFRB 
+ ┣ 📂img 
+ ┣ 📜.gitignore
+ ┣ 📜LICENSE 
  ┗ 📜README.md 
- 
+</pre> 
+
 A descrição de cada um desses itens é dada a seguir:
 - **ativmatUFRB** É a pasta principal, onde nos encontramos;
     + **classe_ativmatUFRB** Nesta pasta, econtram-se arquivos para produção do `.pdf` desejado. 
