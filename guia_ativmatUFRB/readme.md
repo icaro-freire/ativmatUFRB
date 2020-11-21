@@ -1,6 +1,7 @@
 # Versões do Guia do Usuário
 
-Nessa parte do repositório, encontram-se os arquivos das versões do Guia do Usuário da Classe `ativmatUFRB.cls`. <br>
+Nesta parte do repositório, encontram-se os arquivos das versões do Guia do Usuário da Classe `ativmatUFRB.cls`. <br>
+
 > A versão atual é `v1.61`.
 
 A ideia é fazer a versão convergir ao número de ouro:
