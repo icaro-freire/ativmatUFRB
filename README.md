@@ -88,12 +88,12 @@ da lista; bem como, comandos internos que julgamos úteis na construção de uma
 Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disponível no _Guia do Usuário_, cujo _download_ pode ser realizado no _link_:
 
 <p align = "center">
-  <a align = "center" href = "/guia_ativmatUFRB/v1.61/guia-ativmatUFRB_v1.61.pdf">
-      :link: guia-ativmatUFRB_v1.61.pdf
+  <a align = "center" href = "/guia_ativmatUFRB/v1.61/guia-ativmatUFRB.pdf">
+      :link: guia-ativmatUFRB.pdf
   </a>
 </p>
 
-> **Atenção!** É essencial ler o [Guia do Usuário](https://github.com/icaro-freire/ativmatUFRB/blob/master/guia_ativmatUFRB/v1.61/guia-ativmatUFRB_v1.61.pdf) para usar a classe em questão.
+> **Atenção!** É essencial ler o [Guia do Usuário](https://github.com/icaro-freire/ativmatUFRB/blob/master/guia_ativmatUFRB/v1.61/guia-ativmatUFRB.pdf) para usar a classe em questão.
 
 Todavia, dependendo de qual compilador esteja usando, algumas sutis diferenças são necessárias.
 Essa classe considera, apenas, três possibilidades de compiladores: [LuaLaTeX](http://www.luatex.org/) ou [XeLaTeX](https://tug.org/xetex/), que são os mais atuais; e, o [pdfLaTeX](https://www.tug.org/applications/pdftex/), o clássico.
@@ -134,7 +134,7 @@ Logo, visualmente fica:
 > :warning: **Atenção!** 
 > - Geralmente o tempo da primeira compilação é um pouco maior do que os subsequentes, visto que, possivelmente, muitos pacotes serão instalados no seu computador;
 > - É aconselhável, também, compilar umas três ou quatro vezes no início, para que possíveis mensagens de alertas (_warning_) sejam reduzidas.
-> - Existem maneiras de organizar seus arquivos temporários gerados na produção do `.pdf`. Para isso, leia o <a href = "/guia_ativmatUFRB/v1.61/guia-ativmatUFRB_v1.61.pdf"> guia_ativmatUFRB.pdf</a>
+> - Existem maneiras de organizar seus arquivos temporários gerados na produção do `.pdf`. Para isso, leia o <a href = "/guia_ativmatUFRB/v1.61/guia-ativmatUFRB.pdf"> guia_ativmatUFRB.pdf</a>
 
 # Sobre a Descrição desse repositório
 Visualmente, este repositório possui a seguinte descrição:
