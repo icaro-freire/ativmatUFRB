@@ -1,4 +1,8 @@
 Primeiro guia-ativmatUFRB
 ==========================
 
-Contém erros de cógigo ao compilar. 
+> :warning: **Atenção!** 
+> - Esse guia estpa desatualizado.
+> - Esses arquivos contém erros de cógigo ao compilar.
+>    + Tais erros não impedem a produção do `.pdf`, mas estão em conflito com o ambiente `list` e o pacote `tcolorbox`
+> - Os arquivos estão desorganizados
