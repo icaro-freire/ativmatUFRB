@@ -74,26 +74,26 @@
 ## :bulb: Motivação
 
 <p align = "justify">
-A motivação para desenvolver esta classe vem do Projeto de Extensão, cadastrado no [Centro de Formação de Professores](https://www.ufrb.edu.br/cfp/), 
-intitulado: _LaTeX para o Professor de Matemática_. 
-Tal projeto é ofertado (parcialmente) em forma de curso, que versa sobre a confecção de materiais didáticos impressos (e também visuais, como apresentações)
-com alta qualidade tipográfica usando o programa [`LaTeX`](https://sites.google.com/view/latexcfp/sobre/mas-o-que-%C3%A9-latex?authuser=0); bem como,
-no desenvolvimento de classes extra-oficiais (lista de atividade, avaliações, trabalho de conclusão de curso, etc.) para o curso de Licenciatura ou 
-Bacharelado em Matemática da UFRB.
+  A motivação para desenvolver esta classe vem do Projeto de Extensão, cadastrado no <a href = "https://www.ufrb.edu.br/cfp/">Centro de Formação de Professores</a>, 
+  intitulado: <i>LaTeX para o Professor de Matemática</i>. 
+  Tal projeto é ofertado (parcialmente) em forma de curso, que versa sobre a confecção de materiais didáticos impressos (e também visuais, como apresentações) 
+  com alta qualidade tipográfica usando o programa <a href = "https://sites.google.com/view/latexcfp/sobre/mas-o-que-%C3%A9-latex?authuser=0"><tt>LaTeX</tt></a>; bem como, 
+  no desenvolvimento de classes extra-oficiais (lista de atividade, avaliações, trabalho de conclusão de curso, etc.) para o curso de Licenciatura ou 
+  Bacharelado em Matemática da UFRB.
 </p>
 
 ## :memo: Conteúdo
 
 <p align = "justify">
-Essa classe é derivada da classe _standard_ [`article.cls`](https://ctan.dcc.uchile.cl/macros/latex/base/classes.pdf).
-Apenas foi acrescentado um cabeçalho estilizado com o logotipo da UFRB e informações sobre o título da lista, professor, disciplina, curso, semestre e número
-da lista; bem como, comandos internos que julgamos úteis na construção de uma lista com questões de matemática ou área correlacionada.
+  Essa classe é derivada da classe <i>standard</i> <a href = "https://ctan.dcc.uchile.cl/macros/latex/base/classes.pdf"><tt>article.cls</tt></a>.
+  Apenas foi acrescentado um cabeçalho estilizado com o logotipo da UFRB e informações sobre o título da lista, professor, disciplina, curso, semestre e número 
+  da lista; bem como, comandos internos que julgamos úteis na construção de uma lista com questões de matemática ou área correlacionada.
 </p>
 
 ## :floppy_disk: Como instalar?
 
 <p align = "justify">
-Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disponível no _Guia do Usuário_, cujo _download_ pode ser realizado no _link_:
+  Toda informação sobre o uso da classe, cuja versão atual é <tt>v1.61</tt>, está disponível no <i>Guia do Usuário</i>, cujo <i>download</i> pode ser realizado no <i>link</i>:
 </p>
 
 <p align = "center">
@@ -105,14 +105,21 @@ Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disp
 > **Atenção!** É essencial ler o [Guia do Usuário](https://github.com/icaro-freire/ativmatUFRB/blob/master/guia_ativmatUFRB/v1.61/guia-ativmatUFRB.pdf) para usar a classe em questão.
 
 <p align = "justify">
-Todavia, dependendo de qual compilador esteja usando, algumas sutis diferenças são necessárias.
-Essa classe considera, apenas, três possibilidades de compiladores: [LuaLaTeX](http://www.luatex.org/) ou [XeLaTeX](https://tug.org/xetex/), que são os mais atuais; e, o [pdfLaTeX](https://www.tug.org/applications/pdftex/), o clássico.
+  Todavia, dependendo de qual compilador esteja usando, algumas sutis diferenças são necessárias.
+  Essa classe considera, apenas, três possibilidades de compiladores: 
+  <a href = "http://www.luatex.org/">LuaLaTeX</a> 
+  ou 
+  <a href = "https://tug.org/xetex/">XeLaTeX</a>,
+  que são os mais atuais; e, o 
+  <a href = "https://www.tug.org/applications/pdftex/">pdfLaTeX</a>,
+  o clássico.
 </p>
 
 ### Compilando com pdfLaTeX
 Se você (ainda) produz o `.pdf`com `pdfLaTeX`, na pasta de sua lista de atividade (que denotaremos por `01_lista_assunto`) deverá conter:
 - `ativmatUFRB.cls`; ou seja, a classe LaTeX para produção de lista atividade para Matemática (e afins);
-- `modelo_ativmatUFRB.tex`; ou seja, um arquivo `.tex` onde você escreverá sua lista de atividade. Obviamente, o nome pode ser alterado.
+- `modelo_ativmatUFRB.tex`; ou seja, um arquivo `.tex` onde você escreverá sua lista de atividade.
+                            Obviamente, o nome pode ser alterado. 
                             Nela, deverá especificar no preâmbulo, dentre outras coisas (veja o guia) `\documentclass{ativmatUFRB}`;
 - `figs/`; ou seja, uma _pasta_ que deverá conter o lodo da UFRB, bem como **todas** as imagens que serão utilizadas na lista;
 Visualmente, seria assim:
@@ -128,9 +135,9 @@ Visualmente, seria assim:
 ### Compilando com LuaLaTeX ou XeLaTeX
 
 <p align = "justify">
-Além dos itens citados no pdfLaTeX, a pasta `fonts` deve ser acrescentada.
-Essa pasta contém arquivos `.ttf` de uma fonte usada em uma parte específica do texto (a saber, no cabeçalho).
-Logo, visualmente fica:
+  Além dos itens citados no pdfLaTeX, a pasta <tt>fonts</tt> deve ser acrescentada.
+  Essa pasta contém arquivos <tt>.ttf</tt> de uma fonte usada em uma parte específica do texto (a saber, no cabeçalho).
+  Logo, visualmente fica:
 </p>
 
 <pre>
@@ -166,8 +173,8 @@ Visualmente, este repositório possui a seguinte descrição:
 A descrição de cada um desses itens é dada a seguir:
 - **ativmatUFRB** É a pasta principal, onde nos encontramos;
     + **classe_ativmatUFRB** Nesta pasta, econtram-se arquivos para produção do `.pdf` desejado. 
-                              É nela que se encontra, dentre outras coisas, o arquivo `.cls`,
-                              resposável por produzir as alterações no cabeçalho e comandos para confecção da lista de atividade padronizada;
+                             É nela que se encontra, dentre outras coisas, o arquivo `.cls`, resposável por produzir as 
+                             alterações no cabeçalho e comandos para confecção da lista de atividade padronizada;
     + **guia_ativmatUFRB** Nesta pasta, econtram-se arquivos para produção do Guia do Usuário da classe `ativmatUFRB.cls`;
     + **img** Aqui se encontra a imagem do logo exposto nesta página do GitHub;
     + **.gitignore** Arquivo usado, dentro do contexto do GitHub, para ignorar certas extensões ou pastas que o autor julga não necessárias para exibir o que deseja;
@@ -175,6 +182,7 @@ A descrição de cada um desses itens é dada a seguir:
     + **README.md** Arquivo usado, também dentro do contexto do GitHub, para explicar, por exemplo, os objetivos do repositório.
 
 # Licença
-ativmatUFRB.cls, v1.61 </br>
-_Copyright_ :copyright: **⋅** 2020 **⋅** **Ícaro Vidal Freire** </br>
-<a href="https://github.com/icaro-freire/ativmatUFRB/blob/master/LICENSE"><img alt="GitHub license" align="center" src="https://img.shields.io/github/license/icaro-freire/ativmatUFRB"></a>
+ativmatUFRB.cls, v1.61 <br>
+_Copyright_ :copyright: **⋅** 2020 **⋅** **Ícaro Vidal Freire** <br>
+<a href="https://github.com/icaro-freire/ativmatUFRB/blob/master/LICENSE"><img alt="GitHub license" align="center" src="https://img.shields.io/github/license/icaro-freire/ativmatUFRB">
+</a>
