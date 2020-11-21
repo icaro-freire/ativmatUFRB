@@ -116,7 +116,10 @@
 </p>
 
 ### Compilando com pdfLaTeX
-Se você (ainda) produz o `.pdf`com `pdfLaTeX`, na pasta de sua lista de atividade (que denotaremos por `01_lista_assunto`) deverá conter:
+<p aligin = "justify"> 
+  Se você (ainda) produz o <tt>.pdf</tt> com <tt>pdfLaTeX</tt>, na pasta de sua lista de atividade (que denotaremos por <tt>01_lista_assunto</tt>) deverá conter:
+</p>
+
 - `ativmatUFRB.cls`; ou seja, a classe LaTeX para produção de lista atividade para Matemática (e afins);
 - `modelo_ativmatUFRB.tex`; ou seja, um arquivo `.tex` onde você escreverá sua lista de atividade.
                             Obviamente, o nome pode ser alterado. 
@@ -182,7 +185,7 @@ A descrição de cada um desses itens é dada a seguir:
     + **README.md** Arquivo usado, também dentro do contexto do GitHub, para explicar, por exemplo, os objetivos do repositório.
 
 # Licença
-ativmatUFRB.cls, v1.61 <br>
+ativmatUFRB.cls, `v1.61` <br>
 _Copyright_ :copyright: **⋅** 2020 **⋅** **Ícaro Vidal Freire** <br>
 <a href="https://github.com/icaro-freire/ativmatUFRB/blob/master/LICENSE"><img alt="GitHub license" align="center" src="https://img.shields.io/github/license/icaro-freire/ativmatUFRB">
 </a>
