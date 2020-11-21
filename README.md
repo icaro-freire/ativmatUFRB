@@ -72,20 +72,29 @@
 
 # Sobre a Classe ativmatUFRB
 ## :bulb: Motivação
+
+<p align = "justify">
 A motivação para desenvolver esta classe vem do Projeto de Extensão, cadastrado no [Centro de Formação de Professores](https://www.ufrb.edu.br/cfp/), 
 intitulado: _LaTeX para o Professor de Matemática_. 
 Tal projeto é ofertado (parcialmente) em forma de curso, que versa sobre a confecção de materiais didáticos impressos (e também visuais, como apresentações)
 com alta qualidade tipográfica usando o programa [`LaTeX`](https://sites.google.com/view/latexcfp/sobre/mas-o-que-%C3%A9-latex?authuser=0); bem como,
 no desenvolvimento de classes extra-oficiais (lista de atividade, avaliações, trabalho de conclusão de curso, etc.) para o curso de Licenciatura ou 
 Bacharelado em Matemática da UFRB.
+</p>
 
 ## :memo: Conteúdo
+
+<p align = "justify">
 Essa classe é derivada da classe _standard_ [`article.cls`](https://ctan.dcc.uchile.cl/macros/latex/base/classes.pdf).
 Apenas foi acrescentado um cabeçalho estilizado com o logotipo da UFRB e informações sobre o título da lista, professor, disciplina, curso, semestre e número
 da lista; bem como, comandos internos que julgamos úteis na construção de uma lista com questões de matemática ou área correlacionada.
+</p>
 
 ## :floppy_disk: Como instalar?
+
+<p align = "justify">
 Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disponível no _Guia do Usuário_, cujo _download_ pode ser realizado no _link_:
+</p>
 
 <p align = "center">
   <a align = "center" href = "/guia_ativmatUFRB/v1.61/guia-ativmatUFRB.pdf">
@@ -95,8 +104,10 @@ Toda informação sobre o uso da classe, cuja versão atual é v1.61, está disp
 
 > **Atenção!** É essencial ler o [Guia do Usuário](https://github.com/icaro-freire/ativmatUFRB/blob/master/guia_ativmatUFRB/v1.61/guia-ativmatUFRB.pdf) para usar a classe em questão.
 
+<p align = "justify">
 Todavia, dependendo de qual compilador esteja usando, algumas sutis diferenças são necessárias.
 Essa classe considera, apenas, três possibilidades de compiladores: [LuaLaTeX](http://www.luatex.org/) ou [XeLaTeX](https://tug.org/xetex/), que são os mais atuais; e, o [pdfLaTeX](https://www.tug.org/applications/pdftex/), o clássico.
+</p>
 
 ### Compilando com pdfLaTeX
 Se você (ainda) produz o `.pdf`com `pdfLaTeX`, na pasta de sua lista de atividade (que denotaremos por `01_lista_assunto`) deverá conter:
@@ -115,9 +126,12 @@ Visualmente, seria assim:
 </pre>
 
 ### Compilando com LuaLaTeX ou XeLaTeX
+
+<p align = "justify">
 Além dos itens citados no pdfLaTeX, a pasta `fonts` deve ser acrescentada.
 Essa pasta contém arquivos `.ttf` de uma fonte usada em uma parte específica do texto (a saber, no cabeçalho).
 Logo, visualmente fica:
+</p>
 
 <pre>
 📦01_lista_assunto
