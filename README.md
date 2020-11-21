@@ -60,16 +60,6 @@
 > `ativmatUFRB.cls` é um acrónimo para a classe não oficial de latex para listas de **ativ**idades para o curso de **mat**emática da **UFRB**.
 <hr>    
 
-# Status
-<h5 align = "center">
-  :construction: 
-  EM CONSTRUÇÃO 
-  :construction:
-  <p align = "center">
-      Volte em alguns dias!
-  </p>
-</h5>
-
 # Sobre a Classe ativmatUFRB
 ## :bulb: Motivação
 
@@ -124,7 +114,7 @@
 - `modelo_ativmatUFRB.tex`; ou seja, um arquivo `.tex` onde você escreverá sua lista de atividade.
                             Obviamente, o nome pode ser alterado. 
                             Nela, deverá especificar no preâmbulo, dentre outras coisas (veja o guia) `\documentclass{ativmatUFRB}`;
-- `figs/`; ou seja, uma _pasta_ que deverá conter o logo da UFRB, bem como **todas** as imagens que serão utilizadas na lista.
+- `figs`; ou seja, uma _pasta_ que deverá conter o logo da UFRB, bem como **todas** as imagens que serão utilizadas na lista.
            Visualmente, seria assim:
 
 <pre>
