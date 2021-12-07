@@ -60,16 +60,15 @@ Uma visualização desse repositório é dada a seguir:
   + **README.md** é um arquivo, usado no contexto do GitHub, para explicação da classe. Ele pode ser deletado.
 
 ### Cuidados com o arquivo .tex
-No arquivo `.tex`, no qual você esvreverá suas questões, deve conter alguns comandos (são obrigatórios) no preâmbulo e um outros no corpo do documento.
+No arquivo `.tex`, no qual você escreverá suas questões, deve conter alguns comandos (são obrigatórios) no preâmbulo e um outros no corpo do documento.
 São obrigatórios no preâmbulo:
 
-- ou `\usandoXeLuaLaTeX` ou `\usandopdfLaTeX`;
 - `\tituloDaLista{}`
-- `\prof{}
+- `\prof{}`
 - `\disciplina{}`
-- `\curso{} 
+- `\curso{}` 
 - `\semestre{}`
-- `\numeroDaLista{}
+- `\numeroDaLista{}`
 
 São obrigatórios no corpo do documento:
 - `\titulo`
@@ -78,13 +77,8 @@ São obrigatórios no corpo do documento:
 De maneira geral, segue um exemplo de código, com explicações:
 
 ```tex
-\documentclass{ativmatUFRB}
+\documentclass{cls/ativmatUFRB} %------> A classe está no diretório `cls/`
 %
-\usandoXeLuaLaTeX % -------------------> Esse comando indica que você está 
-%                                        usando o `LuaLaTeX` ou o `XeLaTeX` como
-%                                        compiladores. Mas, se (ainda) estiver
-%                                        usando `pdfLaTeX` deve usar o comando
-%                                        `\usandopdfLaTeX`.
 %=======================================
 % Informações do Título da Lista
 %=======================================
