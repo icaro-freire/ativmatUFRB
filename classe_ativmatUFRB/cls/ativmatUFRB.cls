@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% ativmatUFRB.cls, v1.61                                                    %%
-%% Copyright 2020 Ícaro Vidal Freire                                         %%
+%% ativmatUFRB.cls, v2.0.0                                                   %%
+%% Copyright 2021 Ícaro Vidal Freire                                         %%
 %%---------------------------------------------------------------------------%%
 %% Este trabalho está licenciado com a                                       %%
 %%                           The MIT License                                 %%
@@ -47,7 +47,7 @@
 % Identificações Internas
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ativmatUFRB}[2020/11/10 v1.61
+\ProvidesClass{ativmatUFRB}[2020/11/10 v2.0.0
 'Modelo de Lista de Atividade para Licenciatura em Matematica do CFP/UFRB']
 \DeclareOption*{\PassOptionsToCLass{\CurrentOptions}{article}}
  \ProcessOptions\relax
@@ -57,45 +57,29 @@
 %==============================================================================
 % Pacotes da Classe
 %==============================================================================
-\RequirePackage{ifluatex, ifxetex}
- \ifluatex
-  \RequirePackage{fontspec}
-   \newfontfamily{\intimacy}[Path = fonts/intimacy/]{intimacy}
-   \RequirePackage{polyglossia}
-    \setdefaultlanguage[variant = brazilian]{portuguese} 
- \else
-  \ifxetex
-   \RequirePackage{fontspec}
-    \newfontfamily{\intimacy}[Path = fonts/intimacy/]{intimacy}			 
-   \RequirePackage{polyglossia}
-    \setdefaultlanguage[variant = brazilian]{portuguese} 
-  \else
-   \RequirePackage[T1]{fontenc}
-   \RequirePackage{emerald}
-   \RequirePackage{lmodern}
-   \RequirePackage[brazilian]{babel}
-  \fi
- \fi
-
+\RequirePackage{Alegreya, AlegreyaSans}
+\RequirePackage[mdput, ttscaled = true, sfscaled = true]{mathdesign}
+\RequirePackage{fontspec}
+  \newfontfamily{\intimacy}[Path = fonts/intimacy/]{intimacy}
 \RequirePackage[explicit]{titlesec}
 \RequirePackage
 [
- a4paper,
- top    =1cm,
- bottom =1.5cm,
- outer  =1.5cm,
- inner  =1.5cm
+  a4paper,
+  top    =1cm,
+  bottom =1.5cm,
+  outer  =1.5cm,
+  inner  =1.5cm
 ]{geometry}
 \RequirePackage{lipsum}
-\RequirePackage{amsmath, amsthm, amssymb, amscd}
 \RequirePackage{mathtools}
+\RequirePackage{amsthm, amssymb, amscd}
 \RequirePackage{esint}
 \RequirePackage{systeme}
 \RequirePackage{array}
- \setcounter{MaxMatrixCols}{20}
+  \setcounter{MaxMatrixCols}{20}
 \RequirePackage{esvect}
 \RequirePackage{graphicx}
- \graphicspath{{./figs/}}
+  \graphicspath{{./figs/}}
 \RequirePackage[table]{xcolor}
 \RequirePackage{enumerate}
 \RequirePackage{fancybox}
@@ -103,6 +87,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{multicol}
 \RequirePackage[labelfont = bf, font = small]{caption}
+% fazer comando depois
 \RequirePackage{hyperref}
  \hypersetup
  {
@@ -111,13 +96,14 @@
   citecolor   = blue,
   filecolor   = blue,
   urlcolor    = blue,
-  pdfproducer = {XeLaTeX},
-  pdfcreator  = {LaTeX},
+  pdftitle    = {\@tituloDaLista}
+  pdfproducer = {LaTeX},
+  pdfcreator  = {LuaLaTeX, com arara},
   pdfauthor   = {Ícaro Vidal Freire (autor da classe ativmatUFRB.cls)},
   pdfsubject  = {Lista de Atividade},
-  pdfkeywords = {Lista de Atividade, LaTeX, Modelo de Lista de Atividade, Matemática, Física, Química}
+  pdfkeywords = {ativmatUFRB, latex, lualatex, xelatex, math}
  }
- \RequirePackage{units}
+ \usepackage{siunitx}
 %==============================================================================
 
 %==============================================================================
@@ -130,10 +116,8 @@
 \def\prof#1{\gdef\@prof{#1}}
 \def\numeroDaLista#1{\gdef\@numeroDaLista{#1}}
 %
-\def\usandoXeLuaLaTeX{\gdef\@compXLp{\intimacy}}
-\def\usandopdfLaTeX{\gdef\@compXLp{\ECFIntimacy}}
-\def\@compXLp{\@latex@warning@no@line{Compilador inadequado \\% 
-Use \textbackslash\/pdfLaTeX ou \textbackslash\/ XeLaTeX ou \textbackslash\/LuaTeX}\stop}
+%\def\@compXLp{\@latex@warning@no@line{Compilador inadequado \\% 
+%Use \textbackslash\/pdfLaTeX ou \textbackslash\/ XeLaTeX ou \textbackslash\/LuaTeX}\stop}
 %==============================================================================
 
 %==============================================================================
@@ -157,7 +141,7 @@ Use \textbackslash\/pdfLaTeX ou \textbackslash\/ XeLaTeX ou \textbackslash\/LuaT
       \hspace{\stretch{1}}
       \textbf 
       {
-       \@tituloDaLista \phantom{/} % --------------------------> Título da Lista
+        \sffamily \@tituloDaLista \phantom{/} % --------------------------> Título da Lista
       }
       \hspace{\stretch{1}}
       $ \blacktriangleleft $ 
@@ -167,9 +151,9 @@ Use \textbackslash\/pdfLaTeX ou \textbackslash\/ XeLaTeX ou \textbackslash\/LuaT
     \ovalbox
     {
      \begin{minipage}{0.99\linewidth}
-      \textbf{Professor: } \@prof % --------------------------------> Professor
+      {\sffamily \textbf{Professor: }} \@prof % --------------------------------> Professor
       \hfill 
-      \textbf{Disciplina:} \@disciplina %--------------------------> Disciplina
+      {\sffamily \textbf{Disciplina:}} \@disciplina %--------------------------> Disciplina
       \phantom{/}
      \end{minipage}
     }
@@ -177,9 +161,9 @@ Use \textbackslash\/pdfLaTeX ou \textbackslash\/ XeLaTeX ou \textbackslash\/LuaT
     \ovalbox
     {
      \begin{minipage}{0.99\linewidth}
-      \textbf{Curso:} \@curso %-----------------------------------------> Curso 
+      {\sffamily \textbf{Curso:}} \@curso %-----------------------------------------> Curso 
       \hfill 
-      {\@semestre}º semestre %---------------------------------------> Semestre
+      $ {\@semestre}^{\circ} $ {\sffamily semestre} %---------------------------------------> Semestre
       \phantom{/}
      \end{minipage}
     }
@@ -188,7 +172,7 @@ Use \textbackslash\/pdfLaTeX ou \textbackslash\/ XeLaTeX ou \textbackslash\/LuaT
    \ovalbox
    {
     \begin{minipage}{0.995\linewidth}
-     \textbf{Aluno (a):}\quad \hfill \textbf{Data:}\qquad/\qquad/\qquad \, 
+     {\sffamily \textbf{Aluno (a):}}\quad \hfill {\sffamily \textbf{Data:}}\qquad/\qquad/\qquad \, 
     \end{minipage}
    }
   \end{minipage}
@@ -198,7 +182,7 @@ Use \textbackslash\/pdfLaTeX ou \textbackslash\/ XeLaTeX ou \textbackslash\/LuaT
    \begin{minipage}{\textwidth}
     \centering
     \rule[2ex]{7cm}{0.8pt}\\%
-     {\Large \@compXLp Lista de Atividade \@numeroDaLista}\\ %---> nº da lista
+     {\Large \intimacy Lista de Atividade \@numeroDaLista}\\ %---> nº da lista
     \rule{7cm}{2pt}\\
     \vspace{-0.35cm}
     \rule{7cm}{0.8pt} 
