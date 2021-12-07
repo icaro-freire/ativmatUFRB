@@ -58,9 +58,11 @@
 % Pacotes da Classe
 %==============================================================================
 \RequirePackage{Alegreya, AlegreyaSans}
-\RequirePackage[mdput, ttscaled = true, sfscaled = true]{mathdesign}
 \RequirePackage{fontspec}
   \newfontfamily{\intimacy}[Path = fonts/intimacy/]{intimacy}
+\RequirePackage{mathtools}
+\RequirePackage{amsthm, amssymb, amscd}
+\RequirePackage[mdput, ttscaled = true, sfscaled = true]{mathdesign}
 \RequirePackage[explicit]{titlesec}
 \RequirePackage
 [
@@ -71,8 +73,6 @@
   inner  =1.5cm
 ]{geometry}
 \RequirePackage{lipsum}
-\RequirePackage{mathtools}
-\RequirePackage{amsthm, amssymb, amscd}
 \RequirePackage{esint}
 \RequirePackage{systeme}
 \RequirePackage{array}
@@ -87,23 +87,9 @@
 \RequirePackage{booktabs}
 \RequirePackage{multicol}
 \RequirePackage[labelfont = bf, font = small]{caption}
-% fazer comando depois
 \RequirePackage{hyperref}
- \hypersetup
- {
-  colorlinks  = true,
-  linkcolor   = blue,
-  citecolor   = blue,
-  filecolor   = blue,
-  urlcolor    = blue,
-  pdftitle    = {\@tituloDaLista}
-  pdfproducer = {LaTeX},
-  pdfcreator  = {LuaLaTeX, com arara},
-  pdfauthor   = {Ícaro Vidal Freire (autor da classe ativmatUFRB.cls)},
-  pdfsubject  = {Lista de Atividade},
-  pdfkeywords = {ativmatUFRB, latex, lualatex, xelatex, math}
- }
- \usepackage{siunitx}
+\RequirePackage{siunitx}
+\RequirePackage{microtype}
 %==============================================================================
 
 %==============================================================================
@@ -118,6 +104,26 @@
 %
 %\def\@compXLp{\@latex@warning@no@line{Compilador inadequado \\% 
 %Use \textbackslash\/pdfLaTeX ou \textbackslash\/ XeLaTeX ou \textbackslash\/LuaTeX}\stop}
+%==============================================================================
+
+%==============================================================================
+% Configurações de Pacotes
+%==============================================================================
+% pacote hyperref -------------------------------------------------------------
+\hypersetup
+  {
+    colorlinks  = true,
+    linkcolor   = blue,
+    citecolor   = blue,
+    filecolor   = blue,
+    urlcolor    = blue,
+    pdftitle    = {Modelo de Lista de Atividade},
+    pdfproducer = {LaTeX},
+    pdfcreator  = {LuaLaTeX, com arara},
+    pdfauthor   = {Ícaro Vidal Freire (autor da classe ativmatUFRB.cls)},
+    pdfsubject  = {Lista de Atividade},
+    pdfkeywords = {ativmatUFRB, latex, lualatex, xelatex, math}
+  }
 %==============================================================================
 
 %==============================================================================
@@ -196,9 +202,9 @@
 % Modificação na Seção da classe ``article''
 %==============================================================================
 \titleformat{\section}
-{\normalfont\Large\bfseries}{}{0em}{\colorbox{lightgray!70}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{\textcolor{black}{\thesection\quad#1}}}}
+{\normalfont\Large\sffamily\bfseries}{}{0em}{\colorbox{lightgray!70}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{\textcolor{black}{\thesection\quad#1}}}}
 \titleformat{name=\section,numberless}
-{\normalfont\Large\bfseries}{}{0em}{\colorbox{lightgray!70}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{\textcolor{black}{#1}}}}
+{\normalfont\Large\sffamily\bfseries}{}{0em}{\colorbox{lightgray!70}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{\textcolor{black}{#1}}}}
 %==============================================================================
 
 %==============================================================================
