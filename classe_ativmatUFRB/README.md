@@ -65,11 +65,11 @@ São obrigatórios no preâmbulo:
 
 - ou `\usandoXeLuaLaTeX` ou `\usandopdfLaTeX`;
 - `\tituloDaLista{}`
-- `\prof{}
+- `\prof{}`
 - `\disciplina{}`
-- `\curso{} 
+- `\curso{}` 
 - `\semestre{}`
-- `\numeroDaLista{}
+- `\numeroDaLista{}`
 
 São obrigatórios no corpo do documento:
 - `\titulo`
