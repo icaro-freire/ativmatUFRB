@@ -47,7 +47,7 @@
 % Identificações Internas
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ativmatUFRB}[2020/12/07 v2.0.0
+\ProvidesClass{ativmatUFRB}[2020/12/08 v2.0.0
 'Modelo de Lista de Atividade para Licenciatura em Matematica do CFP/UFRB']
 \DeclareOption*{\PassOptionsToCLass{\CurrentOptions}{article}}
  \ProcessOptions\relax
@@ -63,6 +63,7 @@
 \RequirePackage{mathtools}
 \RequirePackage{amsthm, amssymb, amscd}
 \RequirePackage[mdput, ttscaled = true, sfscaled = true]{mathdesign}
+\RequirePackage[brazil]{babel}
 \RequirePackage[explicit]{titlesec}
 \RequirePackage
 [
@@ -81,7 +82,7 @@
 \RequirePackage{graphicx}
   \graphicspath{{./figs/}}
 \RequirePackage[table]{xcolor}
-  \definecolor{laranjaUFRB}{rgb}{0.929411765, 0.603921569, 0.066666667}
+  \definecolor{douradoUFRB}{rgb}{0.929411765, 0.603921569, 0.066666667}
   \definecolor{azulUFRB}{rgb}{0.160784314, 0.08627451, 0.435294118}
 \RequirePackage{enumerate}
 \RequirePackage{fancybox}
@@ -92,10 +93,10 @@
 \RequirePackage
 [
   colorlinks  = true, 
-  linkcolor   = {laranjaUFRB}, 
+  linkcolor   = {blue}, 
   citecolor   = {azulUFRB}, 
   filecolor   = {azulUFRB}, 
-  urlcolor    = {azulUFRB}, 
+  urlcolor    = {douradoUFRB}, 
   pdfproducer = {LaTeX}, 
   pdfsubject  = {lista-de-atividade},
   pdfauthor   = {Ícaro-Vidal-Freire---(autor-da-classe-ativmatUFRB.cls)}
@@ -280,7 +281,8 @@
 \newcommand{\Resp}[1]{\hfill {\footnotesize\textbf{Resp.}:\;\,#1}} %------------> Coloca ``Resposta'' no final de cada item.
 \newcommand{\versor}[1]{\cdot\vec{\textbf{#1}}} %-------------------------------> vetor em negrito
 \newcommand{\vf}{(\quad)} %-----------------------------------------------------> espaço para `V` ou `F`
-\newcommand{\alterdce}[5] %-----------------------------------------------------> Alternativas em duas colunas
+\newcommand{\urlb}[1]{\textbf{\url{#1}}} %--------------------------------------> deixa em negrito a url
+\newcommand{\duascolunas}[5] %--------------------------------------------------> Alternativas em duas colunas
 {
   \begin{enumerate} 
    \begin{minipage}{0.45\linewidth}
@@ -295,7 +297,7 @@
    \end{minipage}
 \end{enumerate}
 }
-\newcommand{\altercols}[6] %----------------------------------------------------> alternativas em colunas: nº de colounas + 5 itens.
+\newcommand{\ncolunas}[6] %----------------------------------------------------> alternativas em colunas: nº de colounas + 5 itens.
 {
   \begin{multicols}{#1}
    \begin{enumerate}
@@ -314,6 +316,22 @@
 % História da Classe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+% 08/12/2021 ---> * Classe atualizada ou para LuaLaTeX, ou para XeLaTeX;
+%                 * Voltei para o pacote babel (que foi atualizado);
+%                 * Organizei os arquivos em pastas;
+%                 * Mudança para fonte Alegreya e Alegreya Sans para texto;
+%                 * Mudança para fonte matemática mdput, do pacote mathdesign;
+%                 * Cabeçalho, Títulos, Subtítulos, label Questão, etc., ficaram
+%                   em fonte Alegreya Sans;
+%                 * Retirei o pacote amsmath, pois mathtools já o carrega;
+%                 * Foram criadas as cores azulUFRB e douradoUFRB;
+%                 * Mudança nas configurações do pacote hyperref;
+%                 * Atualização para o pacote siunitx, em detrimento do units;
+%                 * Utilização do pacote microtype;
+%                 * Criado o comando \urlb{} para deixar a url em negrito;
+%                 * Mudança em nomes de comandos: \duascolunas e \ncolunas;
+%                 * Início da versão v2.0.0 (mudança na semântica da versão).
+%                  
 % 20/03/2020 ---> * Acrescentado informações sobre o ambiente itens;
 %                 * Criado o comando \vf.
 %
