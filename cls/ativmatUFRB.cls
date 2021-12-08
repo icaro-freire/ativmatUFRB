@@ -81,6 +81,8 @@
 \RequirePackage{graphicx}
   \graphicspath{{./figs/}}
 \RequirePackage[table]{xcolor}
+  \definecolor{laranjaUFRB}{rgb}{0.929411765, 0.603921569, 0.066666667}
+  \definecolor{azulUFRB}{rgb}{0.160784314, 0.08627451, 0.435294118}
 \RequirePackage{enumerate}
 \RequirePackage{fancybox}
 \RequirePackage{setspace}
@@ -90,10 +92,10 @@
 \RequirePackage
 [
   colorlinks  = true, 
-  linkcolor   = blue, 
-  citecolor   = blue, 
-  filecolor   = blue, 
-  urlcolor    = blue, 
+  linkcolor   = {azulUFRB}, 
+  citecolor   = {azulUFRB}, 
+  filecolor   = {azulUFRB}, 
+  urlcolor    = {laranjaUFRB}, 
   pdfproducer = {LaTeX}, 
   pdfsubject  = {lista-de-atividade},
   pdfauthor   = {Ícaro-Vidal-Freire---(autor-da-classe-ativmatUFRB.cls)}
@@ -111,6 +113,7 @@
 \def\disciplina#1{\gdef\@disciplina{#1}}
 \def\prof#1{\gdef\@prof{#1}}
 \def\numeroDaLista#1{\gdef\@numeroDaLista{#1}}
+%
 %==============================================================================
 
 %==============================================================================

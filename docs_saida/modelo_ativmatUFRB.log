@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (MiKTeX 21.6) (format=lualatex 2021.11.27)  7 DEC 2021 23:56
+This is LuaHBTeX, Version 1.14.0 (MiKTeX 21.6) (format=lualatex 2021.11.27)  8 DEC 2021 01:17
  restricted system commands enabled.
 **modelo_ativmatUFRB.tex
 (./modelo_ativmatUFRB.tex
@@ -1614,61 +1614,61 @@ Package microtype Info: Loading configuration file microtype.cfg.
 File: microtype.cfg 2021/10/31 v3.0 microtype main configuration file (RS)
 )))
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 35.
+h' as default language. on input line 34.
 
 (/home/icarofreire/repositorios_GitHub/ativmatUFRB/docs_saida/modelo_ativmatUFR
 B.aux)
 \openout1 = modelo_ativmatUFRB.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-5.
+4.
  (/home/icarofreire/.miktex/texmfs/install/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 34.
 LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 3
-5.
+4.
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 34.
 LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 3
-5.
+4.
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/mathdesign/mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 
 Package mathdesign/mdput Warning: Package 'amssymb' shouldn't be used in conjon
-ction with package mdput, on input line 35.
+ction with package mdput, on input line 34.
 
 
 Package mathdesign/mdput Warning: Package 'amsfonts' shouldn't be used in conjo
-nction with package mdput, on input line 35.
+nction with package mdput, on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1730,7 +1730,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 35.
+Package hyperref Info: Link coloring ON on input line 34.
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1743,9 +1743,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count337
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (/home/icarofreire/repositorios_GitHub/ativmatUFRB/docs_saida/modelo_ativmatUFR
 B.out)
@@ -1770,19 +1770,19 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 35.
-LaTeX Info: Redefining \microtypecontext on input line 35.
-Package microtype Info: Applying patch `item' on input line 35.
-Package microtype Info: Applying patch `toc' on input line 35.
-Package microtype Info: Applying patch `eqnum' on input line 35.
-Package microtype Info: Applying patch `footnote' on input line 35.
+or `english'. on input line 34.
+LaTeX Info: Redefining \microtypecontext on input line 34.
+Package microtype Info: Applying patch `item' on input line 34.
+Package microtype Info: Applying patch `toc' on input line 34.
+Package microtype Info: Applying patch `eqnum' on input line 34.
+Package microtype Info: Applying patch `footnote' on input line 34.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 35.
+LaTeX Info: Redefining \showhyphens on input line 34.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
@@ -1793,65 +1793,65 @@ Package microtype Info: Loading generic protrusion settings for font family
 <./figs//ufrb.jpg, id=39, 501.875pt x 339.2675pt>
 File: ./figs//ufrb.jpg Graphic file (type jpg)
 <use ./figs//ufrb.jpg>
-Package luatex.def Info: ./figs//ufrb.jpg  used on input line 37.
+Package luatex.def Info: ./figs//ufrb.jpg  used on input line 36.
 (luatex.def)             Requested size: 99.58464pt x 67.31908pt.
 LaTeX Font Info:    Trying to load font information for OT1+mdput on input line
- 37.
+ 36.
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/mathdesign/mdput/ot1mdput.f
 d
 File: ot1mdput.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdput.
 )
 LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 37.
+(Font)              scaled to size 9.40002pt on input line 36.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `mdput' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 37.
+(Font)              scaled to size 6.58002pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
-(Font)              scaled to size 4.70001pt on input line 37.
+(Font)              scaled to size 4.70001pt on input line 36.
 LaTeX Font Info:    Trying to load font information for OML+mdput on input line
- 37.
+ 36.
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/mathdesign/mdput/omlmdput.f
 d
 File: omlmdput.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdput.
 )
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 9.40002pt on input line 37.
+(Font)              scaled to size 9.40002pt on input line 36.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 6.58002pt on input line 37.
+(Font)              scaled to size 6.58002pt on input line 36.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 4.70001pt on input line 37.
+(Font)              scaled to size 4.70001pt on input line 36.
 LaTeX Font Info:    Trying to load font information for OMS+mdput on input line
- 37.
+ 36.
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/mathdesign/mdput/omsmdput.f
 d
 File: omsmdput.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdput.
 )
 LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 37.
+(Font)              scaled to size 9.40002pt on input line 36.
 LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 37.
+(Font)              scaled to size 6.58002pt on input line 36.
 LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
-(Font)              scaled to size 4.70001pt on input line 37.
+(Font)              scaled to size 4.70001pt on input line 36.
 LaTeX Font Info:    Trying to load font information for OMX+mdput on input line
- 37.
+ 36.
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/mathdesign/mdput/omxmdput.f
 d
 File: omxmdput.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdput.
 )
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 37.
+(Font)              scaled to size 9.40002pt on input line 36.
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 37.
+(Font)              scaled to size 6.58002pt on input line 36.
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
-(Font)              scaled to size 4.70001pt on input line 37.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+(Font)              scaled to size 4.70001pt on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
  (/home/icarofreire/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1859,7 +1859,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
@@ -1869,85 +1869,85 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 37.
+(Font)              scaled to size 9.40002pt on input line 36.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 37.
+(Font)              scaled to size 6.58002pt on input line 36.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
-(Font)              scaled to size 4.70001pt on input line 37.
+(Font)              scaled to size 4.70001pt on input line 36.
 LaTeX Font Info:    Trying to load font information for MDA+mdput on input line
- 37.
+ 36.
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/mathdesign/mdput/mdamdput.f
 d
 File: mdamdput.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdput.
 )
 LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 37.
+(Font)              scaled to size 9.40002pt on input line 36.
 LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 37.
+(Font)              scaled to size 6.58002pt on input line 36.
 LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
-(Font)              scaled to size 4.70001pt on input line 37.
+(Font)              scaled to size 4.70001pt on input line 36.
 LaTeX Font Info:    Trying to load font information for MDB+mdput on input line
- 37.
+ 36.
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/mathdesign/mdput/mdbmdput.f
 d
 File: mdbmdput.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdput.
 )
 LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 37.
+(Font)              scaled to size 9.40002pt on input line 36.
 LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 37.
+(Font)              scaled to size 6.58002pt on input line 36.
 LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
-(Font)              scaled to size 4.70001pt on input line 37.
+(Font)              scaled to size 4.70001pt on input line 36.
 LaTeX Font Info:    Trying to load font information for U+esint on input line 3
-7.
+6.
  (/home/icarofreire/.miktex/texmfs/install/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-37.
+36.
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 9.40002pt on input line 37.
+(Font)              scaled to size 9.40002pt on input line 36.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 37.
+(Font)              scaled to size 10.0pt on input line 36.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `AlegreyaSans' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (8.28694pt too wide) in paragraph at lines 37--37
+Overfull \hbox (8.28694pt too wide) in paragraph at lines 36--36
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
 
  []
 
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 37.
+(Font)              scaled to size 10.0pt on input line 36.
 
-Overfull \hbox (8.28694pt too wide) in paragraph at lines 37--37
+Overfull \hbox (8.28694pt too wide) in paragraph at lines 36--36
 [][] 
  []
 
 
-Overfull \hbox (8.28694pt too wide) in paragraph at lines 37--37
+Overfull \hbox (8.28694pt too wide) in paragraph at lines 36--36
 [][] 
  []
 
 
-Overfull \hbox (9.51154pt too wide) in paragraph at lines 37--37
+Overfull \hbox (9.51154pt too wide) in paragraph at lines 36--36
 [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 13.53603pt on input line 37.
+(Font)              scaled to size 13.53603pt on input line 36.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `intimacy' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1978,67 +1978,59 @@ Package microtype Info: Character `guillemotright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 \c@quest=\count338
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 42.
+(Font)              scaled to size 14.4pt on input line 41.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(1)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 42.
+(Font)              scaled to size 14.4pt on input line 41.
 LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
-(Font)              scaled to size 13.53603pt on input line 42.
+(Font)              scaled to size 13.53603pt on input line 41.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 13.53603pt on input line 42.
+(Font)              scaled to size 13.53603pt on input line 41.
 LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
-(Font)              scaled to size 13.53603pt on input line 42.
+(Font)              scaled to size 13.53603pt on input line 41.
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
-(Font)              scaled to size 13.53603pt on input line 42.
+(Font)              scaled to size 13.53603pt on input line 41.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
-(Font)              scaled to size 13.53603pt on input line 42.
+(Font)              scaled to size 13.53603pt on input line 41.
 LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
-(Font)              scaled to size 13.53603pt on input line 42.
+(Font)              scaled to size 13.53603pt on input line 41.
 LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
-(Font)              scaled to size 13.53603pt on input line 42.
+(Font)              scaled to size 13.53603pt on input line 41.
 (./tex/01_questao.tex
-<./figs//espiral.pdf, id=41, 606.67737pt x 433.23502pt>
-File: ./figs//espiral.pdf Graphic file (type pdf)
-<use ./figs//espiral.pdf>
-Package luatex.def Info: ./figs//espiral.pdf  used on input line 14.
-(luatex.def)             Requested size: 179.2555pt x 128.00815pt.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 8.46002pt on input line 15.
-LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 8.46002pt on input line 15.
+(Font)              scaled to size 6.58002pt on input line 7.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 20.
-LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 7.52002pt on input line 20.
+(Font)              scaled to size 7.52002pt on input line 7.
 LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 20.
+(Font)              scaled to size 7.52002pt on input line 7.
 LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
-(Font)              scaled to size 5.64001pt on input line 20.
+(Font)              scaled to size 5.64001pt on input line 7.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 7.52002pt on input line 20.
+(Font)              scaled to size 7.52002pt on input line 7.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 5.64001pt on input line 20.
+(Font)              scaled to size 5.64001pt on input line 7.
 LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 20.
+(Font)              scaled to size 7.52002pt on input line 7.
 LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
-(Font)              scaled to size 5.64001pt on input line 20.
+(Font)              scaled to size 5.64001pt on input line 7.
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 20.
+(Font)              scaled to size 7.52002pt on input line 7.
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
-(Font)              scaled to size 5.64001pt on input line 20.
+(Font)              scaled to size 5.64001pt on input line 7.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 20.
+(Font)              scaled to size 7.52002pt on input line 7.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
-(Font)              scaled to size 5.64001pt on input line 20.
+(Font)              scaled to size 5.64001pt on input line 7.
 LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 20.
+(Font)              scaled to size 7.52002pt on input line 7.
 LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
-(Font)              scaled to size 5.64001pt on input line 20.
+(Font)              scaled to size 5.64001pt on input line 7.
 LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 20.
+(Font)              scaled to size 7.52002pt on input line 7.
 LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
-(Font)              scaled to size 5.64001pt on input line 20.
-) (./tex/02_questao.tex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
+(Font)              scaled to size 5.64001pt on input line 7.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 5.64001pt on input line 7.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
 .
 
 (/home/icarofreire/.miktex/texmfs/install/tex/latex/lm/t1lmtt.fd
@@ -2048,25 +2040,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+<./figs//espiral.pdf, id=43, 606.67737pt x 433.23502pt>
+File: ./figs//espiral.pdf Graphic file (type pdf)
+<use ./figs//espiral.pdf>
+Package luatex.def Info: ./figs//espiral.pdf  used on input line 14.
+(luatex.def)             Requested size: 179.2555pt x 128.00815pt.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 8.46002pt on input line 15.
+LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
+(Font)              scaled to size 8.46002pt on input line 15.
+LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
+(Font)              scaled to size 7.52002pt on input line 20.
+)
+(./tex/02_questao.tex
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Alegreya' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 18.
-LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
 (Font)              scaled to size 4.70001pt on input line 18.
-)
-(./tex/03_questao.tex
+) (./tex/03_questao.tex
 
 LaTeX Warning: The counter will not be printed.
              The label is: \vf  on input line 9.
 
 )
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 11.28003pt on input line 49.
+(Font)              scaled to size 11.28003pt on input line 48.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 11.28003pt on input line 49.
+(Font)              scaled to size 11.28003pt on input line 48.
  (./tex/04_questao.tex [1
 
 {/home/icarofreire/.miktex/texmfs/data/pdftex/config/pdftex.map}<./figs//ufrb.jp
@@ -2107,41 +2109,42 @@ Package rerunfilecheck Info: File `modelo_ativmatUFRB.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 25632 strings out of 477887
+ 25642 strings out of 477887
  125240,1144653 words of node,token memory allocated
- 897 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 37 kern, 1 penalty, 3 glyph, 3
-8 attribute, 65 glue_spec, 38 attribute_list, 1 write nodes
-   avail lists: 1:1,2:1490,3:483,4:264,5:955,6:135,7:6761,8:72,9:1172,10:6,11:42
+ 941 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 8 glue, 37 kern, 1 penalty, 3 glyph, 4
+2 attribute, 65 glue_spec, 42 attribute_list, 1 write nodes
+   avail lists: 1:1,2:1490,3:526,4:282,5:936,6:139,7:6863,8:81,9:1177,10:6,11:42
 7
- 44901 multiletter control sequences out of 65536+600000
- 236 fonts using 30599327 bytes
- 98i,14n,128p,1014b,1222s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44907 multiletter control sequences out of 65536+600000
+ 239 fonts using 30808199 bytes
+ 98i,14n,128p,1014b,1223s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/icarofreire/.miktex/texmfs/install/fonts/opentype/public/lm/lmroman10-reg
-ular.otf></home/icarofreire/.miktex/texmfs/install/fonts/opentype/huerta/alegrey
-a/Alegreya-Regular.otf>{/home/icarofreire/.miktex/texmfs/install/fonts/enc/dvips
-/lm/lm-ec.enc}{/home/icarofreire/.miktex/texmfs/install/fonts/enc/dvips/ly1/texn
+ular.otf>{/home/icarofreire/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}
+</home/icarofreire/.miktex/texmfs/install/fonts/opentype/huerta/alegreya/Alegrey
+a-Regular.otf>{/home/icarofreire/.miktex/texmfs/install/fonts/enc/dvips/ly1/texn
 ansi.enc}<./fonts/intimacy/intimacy.ttf></home/icarofreire/.miktex/texmfs/instal
 l/fonts/opentype/huerta/alegreya/AlegreyaSans-Regular.otf></home/icarofreire/.mi
 ktex/texmfs/install/fonts/opentype/huerta/alegreya/AlegreyaSans-Bold.otf></home/
 icarofreire/.miktex/texmfs/install/fonts/type1/public/esint-type1/esint10.pfb></
 home/icarofreire/.miktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/lci
 rcle1.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10
-.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdesign/mdput/md-u
-tr7m.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdesign/mdput/
-md-utr7t.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdesign/md
-put/md-utr7v.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdesig
-n/mdput/md-utr7y.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathd
-esign/mdput/md-utr8t.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/m
-athdesign/mdput/md-utri7m.pfb></home/icarofreire/.miktex/texmfs/install/fonts/ty
-pe1/mathdesign/mdpgd/md-utrma.pfb></home/icarofreire/.miktex/texmfs/install/font
-s/type1/adobe/utopia/putb8a.pfb></home/icarofreire/.miktex/texmfs/install/fonts/
-type1/adobe/utopia/putr8a.pfb></home/icarofreire/.miktex/texmfs/install/fonts/ty
-pe1/adobe/utopia/putri8a.pfb></home/icarofreire/.miktex/texmfs/install/fonts/typ
-e1/public/esvect/vect10.pfb>
-Output written on modelo_ativmatUFRB.pdf (3 pages, 223180 bytes).
+.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/public/lm/lmtt8.pfb><
+/home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdesign/mdput/md-utr7m.p
+fb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdesign/mdput/md-utr
+7t.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdesign/mdput/md
+-utr7v.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdesign/mdpu
+t/md-utr7y.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdesign/
+mdput/md-utr8t.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/mathdes
+ign/mdput/md-utri7m.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/ma
+thdesign/mdpgd/md-utrma.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type
+1/adobe/utopia/putb8a.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/
+adobe/utopia/putr8a.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/ad
+obe/utopia/putri8a.pfb></home/icarofreire/.miktex/texmfs/install/fonts/type1/pub
+lic/esvect/vect10.pfb>
+Output written on modelo_ativmatUFRB.pdf (3 pages, 246385 bytes).
 
-PDF statistics: 225 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 131072)
+PDF statistics: 232 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 131072)
  73 words of extra memory for PDF output out of 10000 (max. 100000000)
 
