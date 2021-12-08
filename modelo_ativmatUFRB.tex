@@ -1,7 +1,6 @@
 % arara: lualatex: {options: ['--output-directory=docs_saida']}
-% arara: lualatex: {options: ['--output-directory=docs_saida']}
+% arara: lualatex: {options: ['--output-directory=docs_saida'], synctex: yes}
 
-%
 \documentclass{cls/ativmatUFRB}
 %
 %=======================================
@@ -15,33 +14,39 @@
 \numeroDaLista{I} %--------------------> Número da Lisda de Atividade (colocar números em algarismos romanos).
 %=======================================
 
+% Configurações do Pacote hyperref --------------------------------------------
+%                                   * Você pode apagar o conjunto de comandos 
+%                                     abaixo, juntamennte com esses comentários, 
+%                                     (da linha 17 até a linha 29), caso queira.
+%                                   * Eles servem apenas para configurações de
+%                                     metadados do pdf
+\hypersetup
+{
+  pdfcreator  = {VSCode, LuaLaTeX, arara}, %------------------------------------> o que foi utilizado na criação
+  pdftitle    = {Modelo de Lista de Atividade}, %-------------------------------> título do PDF
+  pdfkeywords = {ativmatUFRB, latex, lualatex, xelatex, math} %-----------------> palavras chaves
+}
+%------------------------------------------------------------------------------
+
 %==============================================================================
 % Início da Lista de Atividade
 %==============================================================================
 \begin{document}
-%                                          * O comando \titulo gera o cabeçalho 
-%                                            estilizado (com logo da UFRB).
-%                                          * Não apagar esse comando!
 %
-  \titulo 
-% 
+  \titulo %---------------------------------------------------------------------> Não apagar esse comando! 
+%                                                                                 O comando \titulo gera o cabeçalho estilizado (com logo da UFRB)
 \begin{atividade} %---------------------------------------------------------->>
 %
-%                                   * O comando \topico{} deixa o nome da seção
-%                                     sombreado com cinza.
-%                                   * Os comando \subtopico{} e \subsubtopico{}
-%                                     diminuem as fontes, mas não coloca a faixa
-%                                     cinza
 % Tópico 01 -------------------------------------------------------------------
-\topico{Sequências \& Séries} 
+\topico{Sequências \& Séries} %-------------------------------------------------> O comando \topico{} deixa o nome da seção sombreado com cinza. 
   \input{tex/01_questao.tex} %-------------------------------------> Questão 01
   \input{tex/02_questao.tex} %-------------------------------------> Questão 02
   \input{tex/03_questao.tex} %-------------------------------------> Questão 03
 %
 % Tópico 02 -------------------------------------------------------------------
 \topico{Cálculo Vetorial e Integral} 
-  \subtopico{Integrais Triplas} 
-  \subsubtopico{Coordenadas Cilíndricas e Esféricas}
+  \subtopico{Integrais Triplas} %-----------------------------------------------> Os comando \subtopico{} e \subsubtopico{} diminuem 
+  \subsubtopico{Coordenadas Cilíndricas e Esféricas}%                             as fontes, mas não coloca a faixa cinza
     \input{tex/04_questao.tex} %-----------------------------------> Questão 04
   \subtopico{Integrais de Linha}
     \input{tex/05_questao.tex} %-----------------------------------> Questão 05
