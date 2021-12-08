@@ -92,10 +92,10 @@
 \RequirePackage
 [
   colorlinks  = true, 
-  linkcolor   = {azulUFRB}, 
+  linkcolor   = {laranjaUFRB}, 
   citecolor   = {azulUFRB}, 
   filecolor   = {azulUFRB}, 
-  urlcolor    = {laranjaUFRB}, 
+  urlcolor    = {azulUFRB}, 
   pdfproducer = {LaTeX}, 
   pdfsubject  = {lista-de-atividade},
   pdfauthor   = {Ícaro-Vidal-Freire---(autor-da-classe-ativmatUFRB.cls)}
