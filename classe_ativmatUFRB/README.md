@@ -60,7 +60,7 @@ Uma visualização desse repositório é dada a seguir:
   + **README.md** é um arquivo, usado no contexto do GitHub, para explicação da classe. Ele pode ser deletado.
 
 ### Cuidados com o arquivo .tex
-No arquivo `.tex`, no qual você esvreverá suas questões, deve conter alguns comandos (são obrigatórios) no preâmbulo e um outros no corpo do documento.
+No arquivo `.tex`, no qual você escreverá suas questões, deve conter alguns comandos (são obrigatórios) no preâmbulo e um outros no corpo do documento.
 São obrigatórios no preâmbulo:
 
 - ou `\usandoXeLuaLaTeX` ou `\usandopdfLaTeX`;
