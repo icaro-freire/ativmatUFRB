@@ -47,7 +47,7 @@
 % Identificações Internas
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ativmatUFRB}[2020/11/10 v2.0.0
+\ProvidesClass{ativmatUFRB}[2020/12/07 v2.0.0
 'Modelo de Lista de Atividade para Licenciatura em Matematica do CFP/UFRB']
 \DeclareOption*{\PassOptionsToCLass{\CurrentOptions}{article}}
  \ProcessOptions\relax
@@ -87,7 +87,17 @@
 \RequirePackage{booktabs}
 \RequirePackage{multicol}
 \RequirePackage[labelfont = bf, font = small]{caption}
-\RequirePackage{hyperref}
+\RequirePackage
+[
+  colorlinks  = true, 
+  linkcolor   = blue, 
+  citecolor   = blue, 
+  filecolor   = blue, 
+  urlcolor    = blue, 
+  pdfproducer = {LaTeX}, 
+  pdfsubject  = {lista-de-atividade},
+  pdfauthor   = {Ícaro-Vidal-Freire---(autor-da-classe-ativmatUFRB.cls)}
+]{hyperref}
 \RequirePackage{siunitx}
 \RequirePackage{microtype}
 %==============================================================================
@@ -101,29 +111,6 @@
 \def\disciplina#1{\gdef\@disciplina{#1}}
 \def\prof#1{\gdef\@prof{#1}}
 \def\numeroDaLista#1{\gdef\@numeroDaLista{#1}}
-%
-%\def\@compXLp{\@latex@warning@no@line{Compilador inadequado \\% 
-%Use \textbackslash\/pdfLaTeX ou \textbackslash\/ XeLaTeX ou \textbackslash\/LuaTeX}\stop}
-%==============================================================================
-
-%==============================================================================
-% Configurações de Pacotes
-%==============================================================================
-% pacote hyperref -------------------------------------------------------------
-\hypersetup
-  {
-    colorlinks  = true,
-    linkcolor   = blue,
-    citecolor   = blue,
-    filecolor   = blue,
-    urlcolor    = blue,
-    pdftitle    = {Modelo de Lista de Atividade},
-    pdfproducer = {LaTeX},
-    pdfcreator  = {LuaLaTeX, com arara},
-    pdfauthor   = {Ícaro Vidal Freire (autor da classe ativmatUFRB.cls)},
-    pdfsubject  = {Lista de Atividade},
-    pdfkeywords = {ativmatUFRB, latex, lualatex, xelatex, math}
-  }
 %==============================================================================
 
 %==============================================================================
@@ -236,7 +223,7 @@
 {
   \noindent
   \newcounter{quest}
-  \begin{list}{\ovalbox{\textbf{Questão \arabic{quest}.}}}
+  \begin{list}{\ovalbox{\sffamily \textbf{Questão \arabic{quest}.}}}
   {
    \usecounter{quest}
    \setlength{\labelwidth}{-2mm} 
