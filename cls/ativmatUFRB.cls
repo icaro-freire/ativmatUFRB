@@ -58,11 +58,12 @@
 % Pacotes da Classe
 %==============================================================================
 \RequirePackage{Alegreya, AlegreyaSans}
+\RequirePackage{eulervm}
 \RequirePackage{fontspec}
   \newfontfamily{\intimacy}[Path = fonts/intimacy/]{intimacy}
 \RequirePackage{mathtools}
 \RequirePackage{amsthm, amssymb, amscd}
-\RequirePackage[mdput, ttscaled = true, sfscaled = true]{mathdesign}
+%\RequirePackage[mdput, ttscaled = true, sfscaled = true]{mathdesign}
 \RequirePackage[brazil]{babel}
 \RequirePackage[explicit]{titlesec}
 \RequirePackage

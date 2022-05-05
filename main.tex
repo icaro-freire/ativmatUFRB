@@ -1,5 +1,7 @@
-% arara: lualatex: {options: ['--output-directory=docs_saida']}
-% arara: lualatex: {options: ['--output-directory=docs_saida'], synctex: yes}
+% arara: lualatex
+% arara: lualatex if found('log', 'undefine references')
+
+%% arara: clean: { extensions: [aux, log, out, pdf] }
 
 \documentclass{cls/ativmatUFRB}
 %
