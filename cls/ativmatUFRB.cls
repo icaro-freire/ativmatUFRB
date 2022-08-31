@@ -57,10 +57,11 @@
 %==============================================================================
 % Pacotes da Classe
 %==============================================================================
-\RequirePackage{Alegreya, AlegreyaSans}
 \RequirePackage{eulervm}
 \RequirePackage{fontspec}
   \newfontfamily{\intimacy}[Path = fonts/intimacy/]{intimacy}
+\RequirePackage{Alegreya, AlegreyaSans}
+
 \RequirePackage{mathtools}
 \RequirePackage{amsthm, amssymb, amscd}
 %\RequirePackage[mdput, ttscaled = true, sfscaled = true]{mathdesign}
@@ -75,11 +76,10 @@
   inner  =1.5cm
 ]{geometry}
 \RequirePackage{lipsum}
-\RequirePackage{esint}
 \RequirePackage{systeme}
 \RequirePackage{array}
   \setcounter{MaxMatrixCols}{20}
-\RequirePackage{esvect}
+%\RequirePackage{esvect}
 \RequirePackage{graphicx}
   \graphicspath{{./figs/}}
 \RequirePackage[table]{xcolor}
