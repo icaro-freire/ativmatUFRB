@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% ativmatUFRB.cls, v2.0.0                                                   %%
+%% ativmatUFRB.cls, v2.1.0                                                   %%
 %% Copyright 2021 Ícaro Vidal Freire                                         %%
 %%---------------------------------------------------------------------------%%
 %% Este trabalho está licenciado com a                                       %%
@@ -47,7 +47,7 @@
 % Identificações Internas
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ativmatUFRB}[2020/12/08 v2.0.0
+\ProvidesClass{ativmatUFRB}[2020/10/20 v2.1.0
 'Modelo de Lista de Atividade para Licenciatura em Matematica do CFP/UFRB']
 \DeclareOption*{\PassOptionsToCLass{\CurrentOptions}{article}}
  \ProcessOptions\relax
@@ -57,13 +57,14 @@
 %==============================================================================
 % Pacotes da Classe
 %==============================================================================
-\RequirePackage{eulervm}
+\RequirePackage{euler}
 \RequirePackage{fontspec}
+\RequirePackage{libertine}
+  \setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
   \newfontfamily{\intimacy}[Path = fonts/intimacy/]{intimacy}
-\RequirePackage{Alegreya, AlegreyaSans}
 
 \RequirePackage{mathtools}
-\RequirePackage{amsthm, amssymb, amscd}
+\RequirePackage{amsthm, amssymb}
 %\RequirePackage[mdput, ttscaled = true, sfscaled = true]{mathdesign}
 \RequirePackage[brazil]{babel}
 \RequirePackage[explicit]{titlesec}
@@ -90,7 +91,8 @@
 \RequirePackage{setspace}
 \RequirePackage{booktabs}
 \RequirePackage{multicol}
-\RequirePackage[labelfont = bf, font = small]{caption}
+%\RequirePackage[labelfont = {bf, sf}, font = small, textfont = sf]{caption}
+\RequirePackage[labelfont={bf, sf}, font={small, sf}]{caption}
 \RequirePackage
 [
   colorlinks  = true, 
@@ -211,13 +213,13 @@
 \newcommand{\subtopico}[1]
 {
   \setlength\parindent{0pt}
-  \subsection{#1}
+  \subsection{\sffamily #1}
 }
 
 \newcommand{\subsubtopico}[1]
 {
   \setlength\parindent{0pt}
-  \subsubsection{#1}
+  \subsubsection{\sffamily #1}
 }
 %==============================================================================
 
@@ -316,6 +318,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % História da Classe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 2022/10/20 ---> * Mudança nas fontes: família Libertine (serif, sans, small 
+%                   caps); DejaVu Sans Mono, para monoespaçadas; e, euler, para 
+%                   fonte Matemática. Ainda não estou gostando do 'Q' maiúsculo, 
+%                   porém, ficará mais prático disponibilizar com o pacote 
+%                   `libertine`. E, percebi que havia uma diferença substancial 
+%                   em simbologias no pacote eulervm, vs euler.
+%                 * Legendas em sans serif
+%                 * Subtítulos em sans serif
 %
 % 08/12/2021 ---> * Classe atualizada ou para LuaLaTeX, ou para XeLaTeX;
 %                 * Voltei para o pacote babel (que foi atualizado);
