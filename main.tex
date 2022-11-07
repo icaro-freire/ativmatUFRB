@@ -1,6 +1,5 @@
 % arara: lualatex
-% arara: lualatex
-% arara: lualatex if found('log', 'undefine references')
+% arara: lualatex if found('log', 'undefined references')
 
 %% arara: clean: { extensions: [aux, log, out, pdf] }
 
@@ -25,7 +24,7 @@
 %                                     metadados do pdf
 \hypersetup
 {
-  pdfcreator  = {VSCode, LuaLaTeX, arara}, %------------------------------------> o que foi utilizado na criação
+  pdfcreator  = {LuaLaTeX, Neovim, arara}, %------------------------------------> ferramentas utilizadas
   pdftitle    = {Modelo de Lista de Atividade}, %-------------------------------> título do PDF
   pdfkeywords = {ativmatUFRB, latex, lualatex, xelatex, math} %-----------------> palavras chaves
 }

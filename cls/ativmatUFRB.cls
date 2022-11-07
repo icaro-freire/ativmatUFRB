@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% ativmatUFRB.cls, v2.1.0                                                   %%
+%% ativmatUFRB.cls, v2.2.0                                                   %%
 %% Copyright 2021 Ícaro Vidal Freire                                         %%
 %%---------------------------------------------------------------------------%%
 %% Este trabalho está licenciado com a                                       %%
@@ -62,11 +62,14 @@
   \newfontfamily{\intimacy}{intimacy}
 \RequirePackage{libertine}
 
+\RequirePackage[brazil]{babel}
+
 \RequirePackage{mathtools}
 \RequirePackage{amsthm, amssymb}
-
-\RequirePackage[brazil]{babel}
-\RequirePackage[explicit]{titlesec}
+\RequirePackage{systeme}
+\RequirePackage{array}
+  \setcounter{MaxMatrixCols}{20}
+%\RequirePackage{esvect}
 
 \RequirePackage
 [
@@ -77,12 +80,6 @@
   inner  =1.5cm
 ]{geometry}
 
-\RequirePackage{lipsum}
-
-\RequirePackage{systeme}
-\RequirePackage{array}
-  \setcounter{MaxMatrixCols}{20}
-%\RequirePackage{esvect}
 \RequirePackage{graphicx}
   \graphicspath{{./figs/}}
 
@@ -96,6 +93,8 @@
 \RequirePackage{tabularray}
 \RequirePackage{multicol}
 \RequirePackage[labelfont={bf, sf}, font={small, sf}]{caption}
+\RequirePackage[explicit]{titlesec}
+
 \RequirePackage
 [
   colorlinks  = true, 
@@ -281,6 +280,7 @@
 %==============================================================================
 % Simbolos e Atalhos Úteis
 %==============================================================================
+\newcommand{\Cis}[1]{\cos{\left(#1\right)} + i \sen{\left(#1\right)}}
 \newcommand{\textbs}[1]{\textbf{\textsf{#1}}} %--------------------------------> negrico sem serifa
 \newcommand{\vazio}{\varnothing} %---------------------------------------------> símbolo do vazio
 \newcommand{\dd}{\,\mathrm{d}} %-----------------------------------------------> 'd' das derivadas em rm
@@ -321,6 +321,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % História da Classe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 2022/11/07 ---> * Iniciada a versão v2.2.0;
+%                 * Optei pela família de fontes Libertine, inclusive para a 
+%                   fonte monoespaçada;
+%                 * Mudei o caminho da fonte Intimacy: agora, é necessário 
+%                   instalá-la no sistema. Disponibilizarei o arquivo '.ttf'; 
+%                 * Criado o comando '\textbs{}' para deixar o texto em negrito 
+%                   e sem serifa; 
+%                 * Criado o comando '\Cis{}' para produzir 'cos() + i \sen()';
+%                 * Usei fonte sem serifa em mais partes do Cabeçalho; 
+%                 * Pequenas modificações/correções na organização do texto; 
+%                 * Tentando encontrar o erro com o pacote 'esvect'
+%                 * Retirado o pacote 'booktabs'. Optei por usar o pacote 
+%                   'tabularray' para produzir as tabelas;
 %
 % 2022/10/20 ---> * Mudança nas fontes: família Libertine (serif, sans, small 
 %                   caps); DejaVu Sans Mono, para monoespaçadas; e, euler, para 
@@ -376,14 +390,4 @@
 %                   alterar comandos no arquivo `.cls`. Os comandos são:
 %                   `\usandoXeLuaLaTeX` ou `\usandopdfLaTeX`
 %
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
