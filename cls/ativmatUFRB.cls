@@ -59,9 +59,8 @@
 %==============================================================================
 \RequirePackage{euler}
 \RequirePackage{fontspec}
+  \newfontfamily{\intimacy}{intimacy}
 \RequirePackage{libertine}
-  \setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
-  \newfontfamily{\intimacy}[Path = fonts/intimacy/]{intimacy}
 
 \RequirePackage{mathtools}
 \RequirePackage{amsthm, amssymb}
@@ -91,7 +90,6 @@
 \RequirePackage{setspace}
 \RequirePackage{booktabs}
 \RequirePackage{multicol}
-%\RequirePackage[labelfont = {bf, sf}, font = small, textfont = sf]{caption}
 \RequirePackage[labelfont={bf, sf}, font={small, sf}]{caption}
 \RequirePackage
 [
@@ -100,7 +98,7 @@
   citecolor   = {azulUFRB}, 
   filecolor   = {azulUFRB}, 
   urlcolor    = {douradoUFRB}, 
-  pdfproducer = {LaTeX}, 
+  pdfproducer = {LaTeX2e}, 
   pdfsubject  = {lista-de-atividade},
   pdfauthor   = {Ícaro-Vidal-Freire---(autor-da-classe-ativmatUFRB.cls)}
 ]{hyperref}
