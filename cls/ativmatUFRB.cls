@@ -47,7 +47,7 @@
 % Identificações Internas
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ativmatUFRB}[2020/10/20 v2.1.0
+\ProvidesClass{ativmatUFRB}[2022/11/07 v2.2.0
 'Modelo de Lista de Atividade para Licenciatura em Matematica do CFP/UFRB']
 \DeclareOption*{\PassOptionsToCLass{\CurrentOptions}{article}}
  \ProcessOptions\relax
@@ -64,9 +64,10 @@
 
 \RequirePackage{mathtools}
 \RequirePackage{amsthm, amssymb}
-%\RequirePackage[mdput, ttscaled = true, sfscaled = true]{mathdesign}
+
 \RequirePackage[brazil]{babel}
 \RequirePackage[explicit]{titlesec}
+
 \RequirePackage
 [
   a4paper,
@@ -75,16 +76,20 @@
   outer  =1.5cm,
   inner  =1.5cm
 ]{geometry}
+
 \RequirePackage{lipsum}
+
 \RequirePackage{systeme}
 \RequirePackage{array}
   \setcounter{MaxMatrixCols}{20}
 %\RequirePackage{esvect}
 \RequirePackage{graphicx}
   \graphicspath{{./figs/}}
+
 \RequirePackage[table]{xcolor}
   \definecolor{douradoUFRB}{rgb}{0.929411765, 0.603921569, 0.066666667}
   \definecolor{azulUFRB}{rgb}{0.160784314, 0.08627451, 0.435294118}
+
 \RequirePackage{enumerate}
 \RequirePackage{fancybox}
 \RequirePackage{setspace}
@@ -149,9 +154,9 @@
     \ovalbox
     {
      \begin{minipage}{0.99\linewidth}
-      {\sffamily \textbf{Professor: }} \@prof % --------------------------------> Professor
+       {\sffamily \textbf{Professor: } \@prof} % --------------------------------> Professor
       \hfill 
-      {\sffamily \textbf{Disciplina:}} \@disciplina %--------------------------> Disciplina
+       {\sffamily \textbf{Disciplina:} \@disciplina} %--------------------------> Disciplina
       \phantom{/}
      \end{minipage}
     }
@@ -159,7 +164,7 @@
     \ovalbox
     {
      \begin{minipage}{0.99\linewidth}
-      {\sffamily \textbf{Curso:}} \@curso %-----------------------------------------> Curso 
+       {\sffamily \textbf{Curso:} \@curso} %-----------------------------------------> Curso 
       \hfill 
       $ {\@semestre}^{\circ} $ {\sffamily semestre} %---------------------------------------> Semestre
       \phantom{/}
@@ -276,14 +281,14 @@
 %==============================================================================
 % Simbolos e Atalhos Úteis
 %==============================================================================
-\newcommand{\vazio}{\varnothing} %----------------------------------------------> Símbolo do Vazio
-\newcommand{\dd}{\,\mathrm{d}} %------------------------------------------------> texto romano para o ``d'' das derivadas 
-\newcommand{\intc}{\varointctrclockwise} %--------------------------------------> Integral para curva fechada do sentido anti-horário
-\newcommand{\Resp}[1]{\hfill {\footnotesize\textbf{Resp.}:\;\,#1}} %------------> Coloca ``Resposta'' no final de cada item.
-\newcommand{\versor}[1]{\cdot\vec{\textbf{#1}}} %-------------------------------> vetor em negrito
-\newcommand{\vf}{(\quad)} %-----------------------------------------------------> espaço para `V` ou `F`
-\newcommand{\urlb}[1]{\textbf{\url{#1}}} %--------------------------------------> deixa em negrito a url
-\newcommand{\duascolunas}[5] %--------------------------------------------------> Alternativas em duas colunas
+\newcommand{\textbs}[1]{\textbf{\textsf{#1}}} %--------------------------------> negrico sem serifa
+\newcommand{\vazio}{\varnothing} %---------------------------------------------> símbolo do vazio
+\newcommand{\dd}{\,\mathrm{d}} %-----------------------------------------------> 'd' das derivadas em rm
+\newcommand{\Resp}[1]{\hfill {\footnotesize\textbf{Resp.}:\;\,#1}} %-----------> 'Resp' no final da linha
+\newcommand{\versor}[1]{\cdot\vec{\textbf{#1}}} %------------------------------> vetor em negrito
+\newcommand{\vf}{(\quad)} %----------------------------------------------------> espaço para `V` ou `F`
+\newcommand{\urlb}[1]{\textbf{\url{#1}}} %-------------------------------------> deixa em negrito a url
+\newcommand{\duascolunas}[5] %-------------------------------------------------> alternativas em duas colunas
 {
   \begin{enumerate} 
    \begin{minipage}{0.45\linewidth}
