@@ -88,7 +88,7 @@
 \RequirePackage{enumerate}
 \RequirePackage{fancybox}
 \RequirePackage{setspace}
-\RequirePackage{booktabs}
+\RequirePackage{tabularray}
 \RequirePackage{multicol}
 \RequirePackage[labelfont={bf, sf}, font={small, sf}]{caption}
 \RequirePackage
