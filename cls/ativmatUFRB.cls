@@ -69,7 +69,7 @@
 \RequirePackage{systeme}
 \RequirePackage{array}
   \setcounter{MaxMatrixCols}{20}
-\RequirePackage{esvect}
+%\RequirePackage{esvect} % pacote com conflito
 
 \RequirePackage
 [
