@@ -335,6 +335,8 @@
 %                 * Tentando encontrar o erro com o pacote 'esvect'
 %                 * Retirado o pacote 'booktabs'. Optei por usar o pacote 
 %                   'tabularray' para produzir as tabelas;
+%                 * Retirei o pacote 'esvect' por conflitos internos ainda não 
+%                   solucionados (dá erro com '\Resp{}' e '\footnote{}')
 %
 % 2022/10/20 ---> * Mudança nas fontes: família Libertine (serif, sans, small 
 %                   caps); DejaVu Sans Mono, para monoespaçadas; e, euler, para 
