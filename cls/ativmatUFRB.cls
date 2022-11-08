@@ -69,7 +69,7 @@
 \RequirePackage{systeme}
 \RequirePackage{array}
   \setcounter{MaxMatrixCols}{20}
-%\RequirePackage{esvect}
+\RequirePackage{esvect}
 
 \RequirePackage
 [
@@ -284,7 +284,7 @@
 \newcommand{\textbs}[1]{\textbf{\textsf{#1}}} %--------------------------------> negrico sem serifa
 \newcommand{\vazio}{\varnothing} %---------------------------------------------> símbolo do vazio
 \newcommand{\dd}{\,\mathrm{d}} %-----------------------------------------------> 'd' das derivadas em rm
-\newcommand{\Resp}[1]{\hfill {\footnotesize\textbf{Resp.}:\;\,#1}} %-----------> 'Resp' no final da linha
+\newcommand{\Resp}[1]{\hfill {\footnotesize\textbs{Resp.}:\;\,{#1}}} %-----------> 'Resp' no final da linha
 \newcommand{\versor}[1]{\cdot\vec{\textbf{#1}}} %------------------------------> vetor em negrito
 \newcommand{\vf}{(\quad)} %----------------------------------------------------> espaço para `V` ou `F`
 \newcommand{\urlb}[1]{\textbf{\url{#1}}} %-------------------------------------> deixa em negrito a url
