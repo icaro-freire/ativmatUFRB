@@ -93,7 +93,7 @@
 \RequirePackage{tabularray}
 \RequirePackage{multicol}
 \RequirePackage[labelfont={bf, sf}, font={small, sf}]{caption}
-\RequirePackage[explicit]{titlesec}
+\RequirePackage[sf, bf, explicit]{titlesec}
 
 \RequirePackage
 [
@@ -321,6 +321,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % História da Classe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 2022/11/08 ---> * Iniciada a versão v3.0.0 (?); 
+%                 * Corrigido a fonte sem serifa nos subtítulos: opção 'sf' e 
+%                   'bf' no 'titlesec';
+%                 * Satisfeito com o resultado geral.
 %
 % 2022/11/07 ---> * Iniciada a versão v2.2.0;
 %                 * Optei pela família de fontes Libertine, inclusive para a 
