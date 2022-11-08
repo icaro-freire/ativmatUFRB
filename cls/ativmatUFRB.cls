@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% ativmatUFRB.cls, v2.2.0                                                   %%
+%% ativmatUFRB.cls, v3.0.0                                                   %%
 %% Copyright 2021 Ícaro Vidal Freire                                         %%
 %%---------------------------------------------------------------------------%%
 %% Este trabalho está licenciado com a                                       %%
@@ -47,7 +47,7 @@
 % Identificações Internas
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ativmatUFRB}[2022/11/07 v2.2.0
+\ProvidesClass{ativmatUFRB}[2022/11/08 v3.0.0
 'Modelo de Lista de Atividade para Licenciatura em Matematica do CFP/UFRB']
 \DeclareOption*{\PassOptionsToCLass{\CurrentOptions}{article}}
  \ProcessOptions\relax
