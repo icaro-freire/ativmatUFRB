@@ -57,20 +57,23 @@
 %==============================================================================
 % Pacotes da Classe
 %==============================================================================
-\RequirePackage{euler}
-\RequirePackage{fontspec}
-  \newfontfamily{\intimacy}{intimacy}
-\RequirePackage{libertine}
+% fontes ---
+\RequirePackage{euler}                 % fonte matemática
+\RequirePackage{fontspec}              % codificação e escolha de fontes
+  \newfontfamily{\intimacy}{intimacy}  % fonte estilizada para 'Atividade X'
+\RequirePackage{libertine}             % família de fonts (rm, sf, tt, etc.)
 
-\RequirePackage[brazil]{babel}
+% tradução ---
+\RequirePackage[brazil]{babel}         % tradução para português brasileiro
 
-\RequirePackage{mathtools}
-\RequirePackage{amsthm, amssymb}
-\RequirePackage{systeme}
-\RequirePackage{array}
+% matemática ---
+\RequirePackage{mathtools}             % carraga o 'amsmath' e traz melhorias
+\RequirePackage{amsthm, amssymb}       % teoremas e simbolos (carrega amsfonts)
+\RequirePackage{systeme}               % sistemas lineares
+\RequirePackage{array}                 % estruturas matemáticas como 'tabelas'
   \setcounter{MaxMatrixCols}{20}
-%\RequirePackage{esvect} % pacote com conflito
 
+% layout & cia ---
 \RequirePackage
 [
   a4paper,
@@ -78,23 +81,34 @@
   bottom =1.5cm,
   outer  =1.5cm,
   inner  =1.5cm
-]{geometry}
+]{geometry}                                 % margens adequadas
+\RequirePackage[sf, bf, explicit]{titlesec} % configurações dos títulos
+\RequirePackage{microtype}                  % protução das fontes
+\RequirePackage[
+  labelfont={bf, sf}, 
+  font={small, sf}
+]{caption}                                  % legendas de tabelas e figuras
+\RequirePackage{setspace}                   % espaçamento entre linhas
 
-\RequirePackage{graphicx}
-  \graphicspath{{./figs/}}
+% gráficos ---
+\RequirePackage{graphicx}    % congigurações gráficas
+  \graphicspath{{./figs/}}   %% todas as figuras devem estar no diretório figs/
 
-\RequirePackage[table]{xcolor}
+% cores ---
+\RequirePackage[table]{xcolor}              % configurações de cores
   \definecolor{douradoUFRB}{rgb}{0.929411765, 0.603921569, 0.066666667}
   \definecolor{azulUFRB}{rgb}{0.160784314, 0.08627451, 0.435294118}
 
-\RequirePackage{enumerate}
-\RequirePackage{fancybox}
-\RequirePackage{setspace}
-\RequirePackage{tabularray}
-\RequirePackage{multicol}
-\RequirePackage[labelfont={bf, sf}, font={small, sf}]{caption}
-\RequirePackage[sf, bf, explicit]{titlesec}
+% tabelas e listas ---
+\RequirePackage{enumerate}              % melhorias em listas
+\RequirePackage{tabularray}             % melhorias em tabelas
+\RequirePackage{multicol}               % várias colunas
 
+% ornamentos e símbolos ---
+\RequirePackage{fancybox}               % ornamentos em caixas
+\RequirePackage{siunitx}                % uniformidade em medidas SI e cia
+
+% metadados ---
 \RequirePackage
 [
   colorlinks  = true, 
@@ -106,8 +120,6 @@
   pdfsubject  = {lista-de-atividade},
   pdfauthor   = {Ícaro-Vidal-Freire---(autor-da-classe-ativmatUFRB.cls)}
 ]{hyperref}
-\RequirePackage{siunitx}
-\RequirePackage{microtype}
 %==============================================================================
 
 %==============================================================================
