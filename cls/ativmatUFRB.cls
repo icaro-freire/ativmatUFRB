@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% ativmatUFRB.cls, v3.0.0                                                   %%
+%% ativmatUFRB.cls, v3.0.1                                                   %%
 %% Copyright 2021 Ícaro Vidal Freire                                         %%
 %%---------------------------------------------------------------------------%%
 %% Este trabalho está licenciado com a                                       %%
@@ -47,7 +47,7 @@
 % Identificações Internas
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ativmatUFRB}[2022/11/08 v3.0.0
+\ProvidesClass{ativmatUFRB}[2023/09/21 v3.0.1
 'Modelo de Lista de Atividade para Licenciatura em Matematica do CFP/UFRB']
 \DeclareOption*{\PassOptionsToCLass{\CurrentOptions}{article}}
  \ProcessOptions\relax
@@ -107,6 +107,7 @@
 % ornamentos e símbolos ---
 \RequirePackage{fancybox}               % ornamentos em caixas
 \RequirePackage{siunitx}                % uniformidade em medidas SI e cia
+\RequirePackage{emoji}                  % emojis diversos 
 
 % metadados ---
 \RequirePackage
@@ -116,7 +117,7 @@
   citecolor   = {azulUFRB}, 
   filecolor   = {azulUFRB}, 
   urlcolor    = {douradoUFRB}, 
-  pdfproducer = {LaTeX2e}, 
+  pdfproducer = {LuaTeX}, 
   pdfsubject  = {lista-de-atividade},
   pdfauthor   = {Ícaro-Vidal-Freire---(autor-da-classe-ativmatUFRB.cls)}
 ]{hyperref}
@@ -140,7 +141,7 @@
 \newcommand{\titulo}
 {
   \noindent
-  \begin{minipage}[t][2.5cm]{1\textwidth}
+  \begin{minipage}[t][2.5cm]{0.985\textwidth}
    \begin{minipage}{0.26\linewidth}
     \centering
     {
@@ -185,7 +186,7 @@
    \vfill
    \ovalbox
    {
-    \begin{minipage}{0.995\linewidth}
+    \begin{minipage}{0.993\linewidth}
      {\sffamily \textbf{Aluno (a):}}\quad \hfill {\sffamily \textbf{Data:}}\qquad/\qquad/\qquad \, 
     \end{minipage}
    }
@@ -287,17 +288,28 @@
 \DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Arg}{Arg}
 \DeclareMathOperator{\cis}{cis}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\Int}{int}
+\DeclareMathOperator{\Ext}{ext}
+\DeclareMathOperator{\Div}{div} 
+\DeclareMathOperator{\Rot}{rot}
 %==============================================================================
 
 %==============================================================================
 % Simbolos e Atalhos Úteis
 %==============================================================================
+\newcommand{\abs}[1]{\left|#1\right|}
 \newcommand{\Cis}[1]{\cos{\left(#1\right)} + i \sen{\left(#1\right)}}
 \newcommand{\textbs}[1]{\textbf{\textsf{#1}}} %--------------------------------> negrico sem serifa
 \newcommand{\vazio}{\varnothing} %---------------------------------------------> símbolo do vazio
 \newcommand{\dd}{\,\mathrm{d}} %-----------------------------------------------> 'd' das derivadas em rm
 \newcommand{\Resp}[1]{\hfill {\footnotesize\textbs{Resp.}:\;\,{#1}}} %-----------> 'Resp' no final da linha
 \newcommand{\versor}[1]{\cdot\vec{\textbf{#1}}} %------------------------------> vetor em negrito
+\newcommand{\campo}[3]{\vec{#1} = \left(#2, #3\right)}
+\newcommand{\campoV}[4]{\vec{#1} = \left(#2, #3, #4\right)}
+\newcommand{\fds}[2]{#1 \dd{#2}}
+\newcommand{\Fds}[2]{\vec{#1} \cdot \dd{\vec{#2}}}
 \newcommand{\vf}{(\quad)} %----------------------------------------------------> espaço para `V` ou `F`
 \newcommand{\urlb}[1]{\textbf{\url{#1}}} %-------------------------------------> deixa em negrito a url
 \newcommand{\duascolunas}[5] %-------------------------------------------------> alternativas em duas colunas
@@ -329,10 +341,19 @@
 }
 %==============================================================================
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % História da Classe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 2023/09/21 ---> * Novos comandos: \campo, \campoV, \fds, \Fds 
+%                 * Novos operadores: \Div, \Rot
+%                 * versão v3.0.1
+%
+% 2023/04/21 ---> * Novos comandos: \re, \im, \Int, \Ext, \abs 
+%                 * Adicionado pacote emoji
+%                 * Mudança no cabeçalho (consertado, finalmente). 
+%                   - vejo necessidade em mudar para tikz
+%                 * Mudança em pdfproducer
 %
 % 2022/11/08 ---> * Iniciada a versão v3.0.0 (?); 
 %                 * Corrigido a fonte sem serifa nos subtítulos: opção 'sf' e 
